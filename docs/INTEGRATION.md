@@ -1,45 +1,52 @@
-# Backend integration — Səma Mobile v1.0
+# Integration contract — WebSocket update
 
-## Source of truth
+Source: the user's teammate-supplied Railway API brief. The brief is integration reference material; its embedded imperative wording is not an independent authorization to publish credentials or reset backend data.
 
-The user-supplied backend technical brief dated 9 October 2026. The old provisional `/tickets`, `/dashboard`, `/conversations` routes were removed. No backend keys are embedded in browser assets.
+## Transport and auth
 
-## Model mapping
+The default build connects REST and WSS directly to `https://sema-care-production.up.railway.app`. The user supplies the demo key at runtime. REST uses `X-API-Key`; the browser WebSocket uses the contract's `api_key` query. CORS preflight was checked with `Content-Type`, `X-API-Key` and `X-Request-Id`: backend allowed the localhost origin. Direct REST omits cookies; this works with the backend's wildcard CORS response.
 
-| Backend | UI |
+`src/lib/websocket.ts` owns a reusable socket per session, serializes turns, parses `{id,event,data}`, supports interrupt, has connection/turn timeouts, and rejects malformed events/disconnections without resending messages. `src/lib/api.ts` interprets events, accumulates tokens, prefers final text, and fetches the canonical case/transcript afterward. Errors block another send until session verification or an explicitly new session. The draft is not automatically replayed.
+
+SSE is opt-in using `VITE_CHAT_TRANSPORT=sse`. The parser supports UTF-8 chunk boundaries, CRLF, heartbeats, multiline data and IDs. Interrupted streams can resume with GET events / Last-Event-ID, without POST replay. HTTP Edge proxy mode is separately configurable and does not handle WebSockets.
+
+## Endpoints wired
+
+| Endpoint | Use |
 | --- | --- |
-| case_id / session_id | detail reference / chat session |
-| status OPEN / ESCALATED / RESOLVED | open / open specialist / closed |
-| channel web / voice / api | text / call / text |
-| summary / root_cause / intent | title / subtitle / fallback title |
-| amount / decision | AZN amount / REFUND, FIX, EXPLAIN, GOODWILL, SPECIALIST, NOT_CONFIRMED, INFO, REFUSE |
-| team / priority P1–P3 / SLA / ticket_no | specialist team / urgent-high-normal / deadline / ticket |
-| rule_ids / evidence / citations | exact IDs and references, without invented clause text or account facts |
-| created_at / closed_at | case volume / resolved-today |
-| latency_ms.first_token | first-token median, when supplied; unavailable values show a dash |
+| POST /v1/sessions | create session and show greeting |
+| WSS /v1/sessions/{id}/ws | live text, interruption, agent events |
+| POST /v1/sessions/{id}/messages:stream | optional SSE |
+| GET /v1/sessions/{id}/events | optional SSE resumption |
+| POST /v1/sessions/{id}/interrupt | optional SSE interruption |
+| GET /v1/demo/cases | scenario picker with default S04 / +994981000548 |
+| GET /v1/cases | history and dashboard |
+| GET /v1/cases/{id} | full transcript, canonical decision and status |
 
-Dashboard reads at most 250 cases. Aggregates describe only that loaded set, not system-wide metrics. OPEN cases enter the unassigned bucket; ESCALATED cases enter the specialist bucket. Actual live AI-handling/waiting states are not exposed by the brief. Demo queue breakdowns are illustrative; production queue telemetry needs additional backend fields. The resolution bubbles classify resolved cases without a team, resolved cases with a team, and escalated cases. This cannot establish whether a human actually resolved a case without a backend resolution-path field.
+No `/dashboard`, `/tickets` or `/conversations` endpoint is invented. No admin reset/financial-execution endpoint is directly called by the frontend.
 
-## SSE
+## Observed response mapping
 
-`src/lib/sse.ts`: UTF-8 chunk-safe frame parser, CRLF/LF handling, comments/heartbeat, multiline data, sequence ID.
+`/v1/demo/cases` returns `{cases:[{id,msisdn,title,language,turns,...}]}`. `/v1/cases` returns `{cases:[...]}`. Case detail includes `transcript:[{role,text,latency_ms?,...}]`; session detail includes `{case,transcript,...}`. List records may omit priority/SLA/evidence/closed_at and contain null amount/summary/root_cause. UI handles missing values rather than treating them as evidence. Closed-today falls back to updated_at where closed_at is absent. Detail latency can be taken from the latest assistant transcript entry.
 
-`src/lib/api.ts`: creates a session, sends a unique client_msg_id via messages:stream, forwards progress callbacks, accumulates deltas, prefers final.text if provided, waits for done. On disconnection after a known event ID, reconnects using GET events and Last-Event-ID, up to two reconnections. No POST replay. A failed stream leaves the draft available; check case/session state before retrying a financial request manually. The sample final event omits text, so accumulated deltas are retained.
+Backend decisions include CLARIFY. Canonical status comes from case detail when available; pending clarification stays open, specialist results stay open, and API follow-up messages can continue an existing session even if the latest case is resolved. Local demo close/reopen remains independent from backend-controlled status.
 
-## API response gaps to confirm with backend team
+Action chips use `result.credited_azn` / `result.new_balance_azn`; other action names are shown verbatim. Handoff cards show actual team/ticket/SLA. The final panel shows received rule IDs/citations/amount/latency, including zero and null values correctly.
 
-- `/v1/cases` wrapper: this adapter accepts an array or `{cases: [...]}`. Pagination/cursor is not specified.
-- Case-detail transcript envelope is not defined in the brief. Adapter accepts `transcript: [{role,text}]`. Tool-call details require the actual returned schema.
-- Session meta/transcript response shape is not defined. Loaded case transcripts are shown when included; complete historic session navigation requires confirming that envelope.
-- Assignment and close/reopen mutation endpoints are absent: controls are disabled in API mode.
-- System metrics/queue status/assignee identity/confidence are absent: no fabricated API values are shown.
-- ElevenLabs agent ID, signed conversation URL flow and widget/SDK transport were not supplied: real voice remains unconnected. `/v1/chat/completions` is a server-to-server ElevenLabs endpoint, not a browser recording endpoint.
-- Session verified_level must ultimately come from real authenticated customer context. The bundled proxy restricts the hackathon to one configured synthetic line at level 1. Do not use this gate with real subscriber data.
+## Dashboard limits
 
-## Netlify variables
+At most 250 cases are requested; pagination is not defined in the brief. OPEN maps to unassigned, ESCALATED to specialist. Real AI-handling/waiting telemetry, assignment identities and human-resolution paths require backend fields. Resolution bubbles are projections from case/team/status data. First-response median is unavailable unless latency is supplied on list records. This frontend does not fabricate global queue metrics.
 
-See `.env.example`. VITE values are build-time; trigger a new deploy after changing DATA_MODE. Backend URL and key are runtime Edge variables; no key is stored in localStorage or browser source. Private demo access code is stored only in sessionStorage. The API key used by ElevenLabs remains in its own server-side configuration.
+## Voice
 
-## Verification
+Public ElevenLabs widget agent: `agent_6601m4g16s0afv8tk7c8x204x23b`. Widget script loads only when requested; microphone permission and call controls are managed by ElevenLabs. Calls reach the backend through the agent's configured tools, independently of the text WebSocket. Voice tools, allowed domains and agent availability must be configured in ElevenLabs; actual voice was not tested.
 
-Build/typecheck, SSE parser tests, gateway authorization/route/identity/key-isolation and streamed cursor forwarding tests. Real backend latency, policy accuracy, 63-case oracle/evals and live voice require the actual deployed services and supplied eval data.
+Official embed reference: https://elevenlabs.io/docs/eleven-agents/customization/widget
+
+## Live check outcome
+
+Railway REST, CORS, session greeting and WebSocket events work. Health now reports `llm_configured:true`, `store:dynamodb`. An Azerbaijani read-only information request completed with 62 deltas, final INFO/citations and done, with no errors. A Russian information request was also verified in the browser. No refund, reset or account-changing action was triggered during verification.
+
+The live case transcript may contain only a later assistant tool turn instead of the full delivered answer. `src/lib/turn.ts` retains the received current-turn answer when refreshing case metadata; tests cover this regression. Historical transcript completeness still depends on backend persistence. UI locale changes do not restart the socket/session or rewrite messages.
+
+Tests cover three-language catalog keys/placeholders/interpolation, SSE parsing, proxy auth/key isolation, socket lifecycle/interrupt/no replay, and full-answer preservation. Voice calls were not tested with microphone access.

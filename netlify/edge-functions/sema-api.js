@@ -8,14 +8,14 @@ export default async function handler(request){
  const digest=async s=>new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)));
  const [a,b]=await Promise.all([digest(supplied),digest(access)]);if(a.reduce((v,n,i)=>v|(n^b[i]),0)!==0)return json('Demo giriş kodu düzgün deyil.',401);
  const url=new URL(request.url);const path=url.pathname.slice(4);
- const getAllowed=request.method==='GET'&&(/^\/v1\/cases(?:\/[A-Za-z0-9_-]+)?$/.test(path)||/^\/v1\/sessions\/[A-Za-z0-9_-]+(?:\/events)?$/.test(path)||path==='/health');
+ const getAllowed=request.method==='GET'&&(/^\/v1\/cases(?:\/[A-Za-z0-9_-]+)?$/.test(path)||/^\/v1\/sessions\/[A-Za-z0-9_-]+(?:\/events)?$/.test(path)||path==='/health'||path==='/v1/demo/cases');
  const postAllowed=request.method==='POST'&&(path==='/v1/sessions'||/^\/v1\/sessions\/[A-Za-z0-9_-]+\/(?:messages(?::stream)?|interrupt)$/.test(path));
  if(!getAllowed&&!postAllowed)return json('Bu əməliyyat web client üçün açıq deyil.',403);
  const origin=request.headers.get('origin');if(origin&&origin!==url.origin)return json('Sorğu mənbəyi qəbul edilmir.',403);
  let body;if(postAllowed){const text=await request.text();if(text.length>16384)return json('Sorğu çox böyükdür.',413);let parsed;try{parsed=JSON.parse(text)}catch{return json('JSON formatı yanlışdır.',400)}
- if(path==='/v1/sessions'){const msisdn=env.get('SEMA_DEMO_MSISDN')||'+994981001644';if(!/^\+99498\d{7}$/.test(msisdn))return json('Demo xətti düzgün konfiqurasiya edilməyib.',503);body=JSON.stringify({channel:'web',msisdn,verified_level:1,language:['az','ru','en'].includes(parsed.language)?parsed.language:'az'})}
+ if(path==='/v1/sessions'){const msisdn=env.get('SEMA_DEMO_MSISDN')||'+994981000548';if(!/^\+99498\d{7}$/.test(msisdn))return json('Demo xətti düzgün konfiqurasiya edilməyib.',503);body=JSON.stringify({channel:'web',msisdn,verified_level:1,language:['az','ru','en'].includes(parsed.language)?parsed.language:'az'})}
  else if(path.endsWith('/interrupt'))body=JSON.stringify({heard_text:String(parsed.heard_text||'').slice(0,8000)});
- else {if(typeof parsed.text!=='string'||!parsed.text.trim()||typeof parsed.client_msg_id!=='string')return json('Mətn və client_msg_id tələb olunur.',400);body=JSON.stringify({text:parsed.text,client_msg_id:parsed.client_msg_id})}}
+ else {if(typeof parsed.text!=='string'||!parsed.text.trim())return json('Mətn tələb olunur.',400);body=JSON.stringify({text:parsed.text,client_msg_id:parsed.client_msg_id})}}
  let upstream;try{upstream=new URL(base)}catch{return json('Backend URL yanlışdır.',503)}if(upstream.protocol!=='https:')return json('Backend HTTPS ilə işləməlidir.',503);
  upstream.pathname=upstream.pathname.replace(/\/$/,'')+path;upstream.search=url.search;
  const headers=new Headers({'X-API-Key':key,'Content-Type':'application/json','Accept':request.headers.get('accept')||'application/json','X-Request-Id':crypto.randomUUID()});const last=request.headers.get('last-event-id');if(last)headers.set('Last-Event-ID',last);
