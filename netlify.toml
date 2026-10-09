@@ -10,3 +10,9 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[build.environment]
+  VITE_DATA_MODE = "api"
+  VITE_API_AUTH = "proxy"
+  VITE_API_BASE_URL = "/api"
+  VITE_CHAT_TRANSPORT = "sse"

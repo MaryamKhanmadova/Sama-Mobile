@@ -4,11 +4,12 @@ import { SessionSocket, websocketUrl } from './websocket';
 import { mergeCaseDetails } from './turn';
 import { readSse } from './sse';
 import { demoConversations, demoDashboard, demoReply } from './demo';
+const proxyAuth=import.meta.env.VITE_API_AUTH !== 'direct';
 export const config = {
  mode: import.meta.env.VITE_DATA_MODE === 'demo' ? 'demo' : 'api',
- baseUrl: (import.meta.env.VITE_API_BASE_URL || 'https://sema-care-production.up.railway.app').replace(/\/$/, ''),
- transport: import.meta.env.VITE_CHAT_TRANSPORT === 'sse' ? 'sse' : 'websocket',
- auth: import.meta.env.VITE_API_AUTH === 'proxy' ? 'proxy' : 'direct',
+ baseUrl: (import.meta.env.VITE_API_BASE_URL || (proxyAuth?'/api':'https://sema-care-production.up.railway.app')).replace(/\/$/, ''),
+ transport: proxyAuth || import.meta.env.VITE_CHAT_TRANSPORT === 'sse' ? 'sse' : 'websocket',
+ auth: proxyAuth ? 'proxy' : 'direct',
  wsBaseUrl: import.meta.env.VITE_WS_BASE_URL || 'https://sema-care-production.up.railway.app',
  voiceAgent: import.meta.env.VITE_ELEVENLABS_AGENT_ID || 'agent_6601m4g16s0afv8tk7c8x204x23b',
 } as const;
@@ -16,14 +17,14 @@ const key='sema-conversations-v1';
 let credential=sessionStorage.getItem('sema-access')||'';
 const sockets=new Map<string,SessionSocket>();
 const headers=()=>({'Content-Type':'application/json',[config.auth==='direct'?'X-API-Key':'X-Sema-Access']:credential,'X-Request-Id':crypto.randomUUID()});
-export const hasAccess=()=>!!credential;
+export const hasAccess=()=>config.auth==='proxy'||!!credential;
 export const setAccess=(value:string)=>{for(const socket of sockets.values())socket.close();sockets.clear();credential=value.trim();sessionStorage.setItem('sema-access',credential)};
 const sessionIndex:Record<string,Conversation>={};
 export class ApiError extends Error { constructor(message:string,public status=0){super(message)} }
 export function readDemo():Conversation[]{try{const saved=localStorage.getItem(key);return saved?JSON.parse(saved):demoConversations}catch{return demoConversations}}
 function writeDemo(data:Conversation[]){localStorage.setItem(key,JSON.stringify(data));window.dispatchEvent(new Event('sema:data'))}
 async function request<T>(path:string,options:RequestInit={}):Promise<T>{
- if(!credential)throw new ApiError(config.auth==='direct'?'Demo API açarını daxil edin.':'Demo giriş kodunu daxil edin.',401);
+ if(!hasAccess())throw new ApiError(config.auth==='direct'?'Demo API açarını daxil edin.':'Demo giriş kodunu daxil edin.',401);
  if(!config.baseUrl)throw new ApiError('VITE_API_BASE_URL təyin edilməyib.');
  const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),20000);
  try{const response=await fetch(`${config.baseUrl}${path}`,{...options,signal:controller.signal,credentials:config.auth==='proxy'?'include':'omit',headers:{...headers(),...options.headers}});if(!response.ok){const error=await response.json().catch(()=>({}));throw new ApiError(error.message||`Sorğu uğursuz oldu (${response.status}).`,response.status);}return await response.json() as T}catch(e){if(e instanceof ApiError)throw e;throw new ApiError(e instanceof Error&&e.name==='AbortError'?'Sorğunun vaxtı bitdi. Yenidən cəhd edin.':'Serverə bağlantı alınmadı.')}finally{clearTimeout(timeout)}
@@ -74,7 +75,7 @@ async function submitStream(text:string,id?:string,onEvent?:(event:StreamEvent)=
 function realDashboard(raw:BackendCase[]):DashboardData {const closed=raw.filter(c=>c.status==='RESOLVED'),today=new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Baku'});const daily=new Map<string,{date:string;incoming:number;resolved:number}>();for(const c of raw){const d=c.created_at.slice(0,10);if(!daily.has(d))daily.set(d,{date:d,incoming:0,resolved:0});daily.get(d)!.incoming++;if(c.closed_at||(c.status==='RESOLVED'&&c.updated_at)){const r=(c.closed_at||c.updated_at)!.slice(0,10);if(!daily.has(r))daily.set(r,{date:r,incoming:0,resolved:0});daily.get(r)!.resolved++}}const times=raw.flatMap(c=>c.latency_ms?[c.latency_ms.first_token/1000]:[]).sort((a,b)=>a-b);return {conversations:raw.map(mapCase),volume:[...daily.values()].sort((a,b)=>a.date.localeCompare(b.date)),medianFirstResponseSeconds:times.length?Math.round(times[Math.floor(times.length/2)]):null,resolvedToday:closed.filter(c=>(c.closed_at||c.updated_at)?.startsWith(today)).length,resolution:{ai:closed.filter(c=>!c.team).length,agent:closed.filter(c=>c.team).length,handoff:raw.filter(c=>c.status==='ESCALATED').length}}}
 export const supportApi={
  open:openSession,
- async demoCustomers():Promise<DemoCustomer[]>{const data=await request<DemoCustomer[]|{cases:DemoCustomer[]}>('/v1/demo/cases');const list=Array.isArray(data)?data:data.cases;return config.auth==='proxy'?list.filter(c=>c.msisdn===demoMsisdn):list},
+ async demoCustomers():Promise<DemoCustomer[]>{const data=await request<DemoCustomer[]|{cases:DemoCustomer[]}>('/v1/demo/cases');const list=Array.isArray(data)?data:data.cases;return list},
  chooseCustomer(msisdn:string){demoMsisdn=msisdn},
  async interrupt(id:string){const c=sessionIndex[id];if(!c)return;const session=c.sessionId||c.id;if(config.transport==='websocket')sockets.get(session)?.interrupt();else await request(`/v1/sessions/${encodeURIComponent(session)}/interrupt`,{method:'POST',body:JSON.stringify({heard_text:''})})},
  disconnect(){for(const socket of sockets.values())socket.close();sockets.clear()},
