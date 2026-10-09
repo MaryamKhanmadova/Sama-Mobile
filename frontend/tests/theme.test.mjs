@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+const source=fs.readFileSync(new URL('../src/theme.css',import.meta.url),'utf8');
+const luminance=hex=>{const rgb=hex.replace('#','').match(/../g).slice(0,3).map(n=>parseInt(n,16)/255).map(n=>n<=.04045?n/12.92:((n+.055)/1.055)**2.4);return rgb[0]*.2126+rgb[1]*.7152+rgb[2]*.0722};
+const ratio=(a,b)=>{const x=luminance(a),y=luminance(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05)};
+test('primary text, muted text, controls, and status text meet AA in both token themes',()=>{const blocks=[...source.matchAll(/\{([^}]+)\}/g)].map(m=>Object.fromEntries([...m[1].matchAll(/--([\w-]+):\s*(#[\da-f]{6})\b/g)].map(m=>[m[1],m[2]])));for(const theme of blocks){for(const [ink,paper] of [['text','surface'],['muted','surface'],['muted','surface-soft'],['on-accent','accent'],['success','success-surface'],['danger','danger-surface'],['warning','warning-surface']])assert.ok(ratio(theme[ink],theme[paper])>=4.5,`${ink}/${paper}: ${ratio(theme[ink],theme[paper])}`)}});

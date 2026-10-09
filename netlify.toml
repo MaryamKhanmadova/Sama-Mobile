@@ -19,3 +19,12 @@
   VITE_API_AUTH = "proxy"
   VITE_API_BASE_URL = "/api"
   VITE_CHAT_TRANSPORT = "sse"
+
+[[headers]]
+  for = "/avatar/maryam.glb"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/avatar/preview.png"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

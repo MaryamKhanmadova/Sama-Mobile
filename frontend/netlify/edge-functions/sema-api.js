@@ -10,7 +10,9 @@ export default async function handler(request){
  const [a,b]=await Promise.all([digest(supplied),digest(access)]);if(a.reduce((v,n,i)=>v|(n^b[i]),0)!==0)return json('Demo giriş kodu düzgün deyil.',401);
  }
  const url=new URL(request.url);const path=url.pathname.slice(4);
- const getAllowed=request.method==='GET'&&(/^\/v1\/cases(?:\/[A-Za-z0-9_-]+)?$/.test(path)||/^\/v1\/sessions\/[A-Za-z0-9_-]+(?:\/events)?$/.test(path)||path==='/health'||path==='/v1/demo/cases');
+ const getAllowed=request.method==='GET'&&(/^\/v1\/cases(?:\/[A-Za-z0-9_-]+)?$/.test(path)||/^\/v1\/sessions\/[A-Za-z0-9_-]+(?:\/events)?$/.test(path)||path==='/health'||path==='/v1/demo/cases'||/^\/v1\/lines\/(?:%2B|\+)?99498\d{7}\/usage$/i.test(path)||path==='/v1/usage/summary');
+ const usageLine=path.match(/^\/v1\/lines\/((?:%2B|\+)?99498\d{7})\/usage$/i);
+ if(usageLine||path==='/v1/usage/summary'){const count=url.searchParams.get('months')||'6';if(!/^[1-6]$/.test(count)||[...url.searchParams.keys()].some(k=>k!=='months'))return json('Usage sorğusu düzgün deyil.',400);if(usageLine&&!['994981000137','994981000274','994981000411','994981000548','994981000685','994981000822','994981000959','994981001096','994981001233','994981001370'].includes(decodeURIComponent(usageLine[1]).replace('+','')))return json('Bu nömrə üçün məlumat tapılmadı.',404);}
  const postAllowed=request.method==='POST'&&(path==='/v1/sessions'||/^\/v1\/sessions\/[A-Za-z0-9_-]+\/(?:messages(?::stream)?|interrupt)$/.test(path));
  if(!getAllowed&&!postAllowed)return json('Bu əməliyyat web client üçün açıq deyil.',403);
  const origin=request.headers.get('origin');if(origin&&origin!==url.origin)return json('Sorğu mənbəyi qəbul edilmir.',403);

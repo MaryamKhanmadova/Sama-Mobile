@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "product": "Sama Care",
+    "product": "Səma Mobile",
     "locale": "az",
     "version": 1,
-    "purpose": "AZ / EN / RU UI tərcümələri üçün mətn və kontekst kataloqu. Hələ dil seçimi aktivləşdirilməyib.",
+    "purpose": "AZ / EN / RU UI mətn və kontekst kataloqu. Dil seçimi aktivdir.",
     "instructions": [
       "Bu faylı az.json, en.json və ru.json kimi üç nüsxə hazırla.",
       "Yalnız messages içindəki dəyərləri tərcümə et; açarları, quruluşu və array sırasını saxla.",
       "Hər nüsxədə locale dəyərini az, en və ya ru et.",
       "{count}, {name}, {amount}, {seconds}, {minutes}, {latency}, {date}, {incoming}, {resolved}, {openCount}, {overdueCount}, {urgentCount}, {sourceNote}, {team}, {status} placeholder-lərini dəyişmə; cümlədə yerini dəyişmək olar.",
-      "Sama Care və Ayla adlarını, API/WS/SSE/WebSocket/ElevenLabs/Railway adlarını, AZN və qayda ID-lərini saxla.",
+      "Səma Mobile və Məryəm Agent adlarını, API/WS/SSE/WebSocket/ElevenLabs/Railway adlarını, AZN və qayda ID-lərini saxla.",
       "Müştəri adları, telefonlar, ticket ID-ləri, backend kodları və dinamik hesab məlumatları tərcümə mətnləri deyil."
     ],
     "sections": {
@@ -17,7 +17,7 @@
       "common": "Ortaq düymələr, statuslar, formatlar və vahidlər.",
       "navigation": "Dashboard naviqasiyası.",
       "support": "Mətn/zəng səhifəsi: tarixçə, axtarış, giriş, promptlar, composer, help modal və axın vəziyyətləri. Dashboard axtarışı çıxarılıb; tarixçə axtarışı saxlanılıb.",
-      "voice": "Demo zəng və ElevenLabs panelinin frontend mətnləri. ElevenLabs widget-in daxili mətnləri ayrıca vendor tərəfindən idarə olunur.",
+      "voice": "Ana ekrandakı səsli dəstək panelinin frontend mətnləri.",
       "dashboard": "KPI, növbələr, qrafik, nəticələr, filterlər, helper, detallar, qaydalar, bildirişlər və CSV başlıqları.",
       "events": "Əməliyyat nəticəsi, insana ötürmə və Niyə? paneli.",
       "actions": "Köhnə/demo qərar növlərinin insanın oxuya biləcəyi adları.",
@@ -41,10 +41,10 @@
   },
   "messages": {
     "brand": {
-      "productName": "Sama Care",
-      "assistantName": "Ayla",
-      "pageTitle": "Sama Care — Müştəri dəstəyi",
-      "supportAgent": "Ayla agenti",
+      "productName": "Səma Mobile",
+      "assistantName": "Məryəm Agent",
+      "pageTitle": "Səma Mobile — Müştəri dəstəyi",
+      "supportAgent": "Məryəm Agent",
       "supportTeam": "Dəstək komandası"
     },
     "common": {
@@ -80,16 +80,20 @@
         "az": "Azərbaycan dili",
         "en": "English",
         "ru": "Русский"
-      }
+      },
+      "cancel": "Ləğv et",
+      "skipContent": "Əsas məzmuna keç",
+      "offline": "İnternet bağlantısı yoxdur. Bağlantını bərpa edib yenidən cəhd edin."
     },
     "navigation": {
-      "dashboard": "Dashboard",
+      "dashboard": "İstifadə paneli",
       "overview": "İcmal",
       "support": "Müştəri dəstəyi",
       "policy": "Qaydalar",
       "report": "Hesabat",
       "notifications": "Bildirişlər",
-      "mainLabel": "Əsas naviqasiya"
+      "mainLabel": "Əsas naviqasiya",
+      "menu": "Naviqasiya menyusu"
     },
     "support": {
       "conversations": "Söhbətlər",
@@ -126,15 +130,15 @@
       "callHistory": "Zəng tarixçəsi",
       "textConversation": "Mətnli söhbət",
       "demoResponse": "Demo cavabı",
-      "liveResponse": "Ayla · canlı API",
+      "liveResponse": "Məryəm Agent · canlı API",
       "stopResponse": "Cavabı dayandır",
       "protectedChat": "Söhbətiniz qorunur",
       "listeningHeading": "Sizi dinləyirəm.",
       "voiceHeading": "Danışın, həll edək.",
-      "welcomeHeading": "Salam, mən Ayla.",
+      "welcomeHeading": "Salam, mən Məryəm Agent.",
       "voiceDemoDescription": "Səsli agentin demo görünüşü",
       "voiceDescription": "Bir zənglə suallarınıza cavab tapın.",
-      "welcomeDescription": "Sama Care müştəri mütəxəssisiniz. Sizə necə kömək edə bilərəm?",
+      "welcomeDescription": "Səma Mobile müştəri mütəxəssisiniz. Sizə necə kömək edə bilərəm?",
       "languageHint": "Azərbaycan, rus və ingilis dillərində yazın",
       "closedBanner": "Bu söhbət bağlanıb. Davam etmək üçün yenidən açın.",
       "composerPlaceholder": "Müraciətinizi buraya yazın...",
@@ -153,18 +157,19 @@
       },
       "progress": {
         "investigating": "Araşdırılır…",
-        "preparingAnswer": "Ayla cavab hazırlayır…",
+        "preparingAnswer": "Məryəm Agent cavab hazırlayır…",
         "preparing": "Cavab hazırlanır…",
         "incomplete": "Cavab tamamlanmadı. Sessiyanı yoxlayın.",
         "interrupting": "Cavab dayandırılır…"
       },
       "help": {
         "dialogLabel": "Demo haqqında",
-        "title": "Sama Care ilə tanış olun",
+        "title": "Səma Mobile ilə tanış olun",
         "description": "Telekom müraciətləriniz üçün mətn və səsli dəstək platforması.",
         "demoDescription": "Söhbətlər brauzerinizdə saxlanılır. Mətn və zəng nümunədir.",
-        "apiDescription": "Mətnli söhbət Railway backendinə WebSocket ilə bağlanır. Səs ElevenLabs panelindən başladılır. Bu platforma yalnız sintetik demo müştəriləri üçündür."
-      }
+        "apiDescription": "Səsli söhbət ana ekranda açılır. Mikrofonu idarə edə və zəngi bitirə bilərsiniz."
+      },
+      "newMessages": "Yeni mesajlar"
     },
     "voice": {
       "unmute": "Səsi aç",
@@ -172,13 +177,30 @@
       "endCall": "Zəngi bitir",
       "startDemoCall": "Demo zəngi başlat",
       "demoNotice": "Real zəng inteqrasiyası növbəti mərhələdə qoşulacaq",
-      "closePanel": "Səs panelini bağla",
-      "startLiveCall": "Ayla ilə canlı danış",
-      "startInstructions": "Zəngi başlatmaq üçün ElevenLabs panelindən istifadə edin.",
-      "providerDescription": "Səsli danışıq ElevenLabs vasitəsilə həyata keçirilir.",
+      "closePanel": "Səsli söhbət ana ekranda açılır. Mikrofonu idarə edə və zəngi bitirə bilərsiniz.",
+      "startLiveCall": "Məryəm Agent ilə canlı danış",
+      "startInstructions": "Səsli söhbət ana ekranda açılır. Mikrofonu idarə edə və zəngi bitirə bilərsiniz.",
+      "providerDescription": "Səsli söhbət ana ekranda açılır. Mikrofonu idarə edə və zəngi bitirə bilərsiniz.",
       "loadError": "Səs xidməti yüklənmədi. Mətn rejimindən istifadə edin.",
       "savedDemoPreview": "Demo zəng · {seconds} saniyə",
-      "savedDemoReply": "Demo zəng {seconds} saniyə davam etdi. Real səs ötürülməyib."
+      "savedDemoReply": "Demo zəng {seconds} saniyə davam etdi. Real səs ötürülməyib.",
+      "connecting": "Qoşulur…",
+      "ready": "Zəngə hazırdır",
+      "speaking": "Məryəm Agent danışır",
+      "micOff": "Mikrofon bağlıdır",
+      "listening": "Sizi dinləyirəm",
+      "permissionError": "Mikrofona icazə verilmədi. Brauzer ayarlarından icazə verib yenidən cəhd edin.",
+      "connectionError": "Zəngə qoşulmaq alınmadı. Yenidən cəhd edin.",
+      "call": "Zəng et",
+      "thinking": "Cavab hazırlanır…",
+      "volume": "Agentin səs səviyyəsi",
+      "captions": "Yazılar",
+      "retry": "Yenidən zəng et",
+      "endConfirm": "Zəngi bitirmək istəyirsiniz?",
+      "noMicrophone": "Mikrofon tapılmadı. Mikrofon qoşub yenidən cəhd edin.",
+      "insecure": "Səsli zəng üçün HTTPS və ya localhost lazımdır.",
+      "unsupported": "Bu brauzer səsli zəngi dəstəkləmir. Uyğun brauzer ilə yenidən cəhd edin.",
+      "networkError": "Zəngdə bağlantı kəsildi. Yenidən zəng edə bilərsiniz."
     },
     "dashboard": {
       "welcome": "Yenidən xoş gəlmisiniz, {name}",
@@ -284,7 +306,7 @@
         "description": "Hər qərar hərəkəti, dəqiq qayda bəndini, hesab faktını və müştərinin dilində cavabı göstərməlidir.",
         "doubleChargeTitle": "R-BILL-02 · İkiqat tutulma",
         "refundRules": "Artıq tutulmuş məbləğ geri qaytarılır. R-ADJ-01: bir müraciətdə avtomatik kredit limiti 20 AZN. R-ADJ-02: 30 gündə maksimum 2 avtomatik kredit.",
-        "source": "Refund limiti, faktiki ödəniş və icazələr backend tərəfindən yoxlanılmalıdır. Mənbə: Sama Care backend texniki tapşırığı v1.0, §4.2."
+        "source": "Refund limiti, faktiki ödəniş və icazələr backend tərəfindən yoxlanılmalıdır. Mənbə: Səma Mobile backend texniki tapşırığı v1.0, §4.2."
       },
       "notifications": {
         "eyebrow": "BİLDİRİŞLƏR",
@@ -407,8 +429,120 @@
       "billingPreview": "Ödənişin yoxlanılması tələb olunur",
       "slaHours": "{count} saat",
       "syntheticFact": "false (sintetik hesab)",
-      "refundPolicy": "Sama Care §4.2: ikiqat tutulma zamanı artıq məbləğ geri qaytarılır.",
-      "decisionDisclaimer": "Sama Care nümunə fakt və qayda əsasında demo qərarı; heç bir ödəniş icra olunmayıb."
+      "refundPolicy": "Səma Mobile §4.2: ikiqat tutulma zamanı artıq məbləğ geri qaytarılır.",
+      "decisionDisclaimer": "Səma Mobile nümunə fakt və qayda əsasında demo qərarı; heç bir ödəniş icra olunmayıb."
+    },
+    "usage": {
+      "expenses": "Xərc və istifadə",
+      "myExpenses": "Xərclərim",
+      "summary": "Ümumi statistika",
+      "summaryHeading": "Abunəçilər — bir baxışda",
+      "summaryDescription": "Xərclər, istifadə və qənaət imkanları.",
+      "month": "Ay",
+      "current": "Cari ay",
+      "mockSource": "Mock məlumatlar",
+      "apiSource": "Backend məlumatları",
+      "thisMonth": "Seçilmiş ayın xərci",
+      "forecast": "Proqnoz",
+      "returned": "Qaytarılıb",
+      "netCost": "Xalis xərc",
+      "comparedPrevious": "proqnozun keçən aya nisbəti",
+      "elapsedDays": "{elapsed}/{total} gün",
+      "monthEndEstimate": "Ay sonu təxminən",
+      "completedMonth": "Tamamlanmış ay",
+      "creditedBack": "Balansa geri qaytarılan",
+      "afterCredits": "Qaytarılmalardan sonra",
+      "revenue": "Ümumi xərc",
+      "subscribers": "Abunəçi",
+      "lines": "Aktiv xətlər",
+      "averageBill": "Orta hesab",
+      "perLine": "Bir abunəçiyə",
+      "creditCount": "{count} qaytarılma",
+      "savings": "Qənaət imkanı",
+      "monthlyOpportunity": "Aylıq qənaət imkanı",
+      "refundHeading": "Səma Mobile sizə {amount} qaytardı",
+      "costBreakdown": "Xərc bölgüsü",
+      "costStructure": "Xərc strukturu",
+      "actualCost": "Faktiki xərc",
+      "forecastLegend": "Şəffaf bar: proqnoz",
+      "history": "Xərclərin tarixçəsi",
+      "chartPeriod": "Qrafik dövrü",
+      "months": "{count} ay",
+      "forecastNote": "Xətti proqnozdur; gələcək əlavə paketləri nəzərə almır.",
+      "monthEnd": "Ay sonu proqnozu",
+      "averageData": "Orta internet",
+      "averageVoice": "Orta dəqiqə",
+      "minutes": "dəq",
+      "packageUsage": "Paket istifadəsi",
+      "tariffMix": "Tarif paylanması",
+      "internet": "İnternet",
+      "voiceMinutes": "Dəqiqələr",
+      "noPackage": "Paket yoxdur",
+      "payg": "Paket yoxdur — hər MB ödənişlidir.",
+      "percentUsed": "Aylıq limitin {pct}%-i istifadə olunub",
+      "partialMonth": "İstifadə və xərclər yalnız keçən günlər üçündür.",
+      "internetCategories": "İnternet hara gedir?",
+      "daily": "Gündəlik internet",
+      "peakDay": "Ən çox istifadə: ayın {day}-i",
+      "noData": "Hələ məlumat yoxdur",
+      "noCosts": "Xərc yoxdur",
+      "recommendations": "Tövsiyələr",
+      "canSave": "Ayda {amount} qənaət edə bilərsiniz",
+      "talk": "Məryəm Agent ilə danış",
+      "addons": "Paket və xidmətlər",
+      "day": "gün",
+      "monthUnit": "ay",
+      "days": "{count} gün",
+      "extraCharges": "Əlavə rouminq xərci",
+      "trend": "Orta hesab və qaytarılma",
+      "separateScales": "Ayrı miqyaslar · AZN",
+      "roamingTrips": "{count} rouminq səfəri",
+      "authError": "API açarı qəbul edilmir. Netlify server konfiqurasiyasını yoxlayın.",
+      "notFound": "Usage endpoint-i və ya bu nömrənin məlumatı tapılmadı. Backend hazır olduqda yenidən cəhd edin.",
+      "loadError": "İstifadə məlumatları yüklənmədi. Yenidən cəhd edin.",
+      "invalidResponse": "Usage cavabı müqaviləyə uyğun deyil.",
+      "mockMissing": "Mock faylı tapılmadı. Backend komandasının JSON fayllarını public/mock/usage qovluğuna əlavə edin.",
+      "costs": {
+        "monthly_fee": "Aylıq abunə haqqı",
+        "packages": "Əlavə paketlər",
+        "vas": "Əlavə xidmətlər",
+        "roaming": "Rouminq",
+        "out_of_bundle": "Paketdən kənar istifadə",
+        "intl_calls": "Beynəlxalq zənglər"
+      },
+      "categories": {
+        "video": "Video",
+        "social": "Sosial şəbəkələr",
+        "browsing": "Sayt gəzintisi",
+        "music": "Musiqi",
+        "messaging": "Mesajlaşma",
+        "games": "Oyunlar",
+        "maps": "Xəritələr"
+      },
+      "monthNames": [
+        "yanvar",
+        "fevral",
+        "mart",
+        "aprel",
+        "may",
+        "iyun",
+        "iyul",
+        "avqust",
+        "sentyabr",
+        "oktyabr",
+        "noyabr",
+        "dekabr"
+      ]
+    },
+    "avatar": {
+      "label": "Məryəm, virtual müştəri mütəxəssisi",
+      "loading": "Məryəm hazırlanır…"
+    },
+    "theme": {
+      "label": "Görünüş rejimi",
+      "system": "Sistem",
+      "light": "İşıqlı",
+      "dark": "Qaranlıq"
     }
   }
 }

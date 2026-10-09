@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "product": "Sama Care",
+    "product": "Sama Mobile",
     "locale": "ru",
     "version": 1,
-    "purpose": "AZ / EN / RU UI tərcümələri üçün mətn və kontekst kataloqu. Hələ dil seçimi aktivləşdirilməyib.",
+    "purpose": "AZ / EN / RU UI mətn və kontekst kataloqu. Dil seçimi aktivdir.",
     "instructions": [
       "Bu faylı az.json, en.json və ru.json kimi üç nüsxə hazırla.",
       "Yalnız messages içindəki dəyərləri tərcümə et; açarları, quruluşu və array sırasını saxla.",
       "Hər nüsxədə locale dəyərini az, en və ya ru et.",
       "{count}, {name}, {amount}, {seconds}, {minutes}, {latency}, {date}, {incoming}, {resolved}, {openCount}, {overdueCount}, {urgentCount}, {sourceNote}, {team}, {status} placeholder-lərini dəyişmə; cümlədə yerini dəyişmək olar.",
-      "Sama Care və Ayla adlarını, API/WS/SSE/WebSocket/ElevenLabs/Railway adlarını, AZN və qayda ID-lərini saxla.",
+      "Sama Mobile və Maryam Agent adlarını, API/WS/SSE/WebSocket/ElevenLabs/Railway adlarını, AZN və qayda ID-lərini saxla.",
       "Müştəri adları, telefonlar, ticket ID-ləri, backend kodları və dinamik hesab məlumatları tərcümə mətnləri deyil."
     ],
     "sections": {
@@ -17,7 +17,7 @@
       "common": "Ortaq düymələr, statuslar, formatlar və vahidlər.",
       "navigation": "Dashboard naviqasiyası.",
       "support": "Mətn/zəng səhifəsi: tarixçə, axtarış, giriş, promptlar, composer, help modal və axın vəziyyətləri. Dashboard axtarışı çıxarılıb; tarixçə axtarışı saxlanılıb.",
-      "voice": "Demo zəng və ElevenLabs panelinin frontend mətnləri. ElevenLabs widget-in daxili mətnləri ayrıca vendor tərəfindən idarə olunur.",
+      "voice": "Ana ekrandakı səsli dəstək panelinin frontend mətnləri.",
       "dashboard": "KPI, növbələr, qrafik, nəticələr, filterlər, helper, detallar, qaydalar, bildirişlər və CSV başlıqları.",
       "events": "Əməliyyat nəticəsi, insana ötürmə və Niyə? paneli.",
       "actions": "Köhnə/demo qərar növlərinin insanın oxuya biləcəyi adları.",
@@ -42,10 +42,10 @@
   },
   "messages": {
     "brand": {
-      "productName": "Sama Care",
-      "assistantName": "Ayla",
-      "pageTitle": "Sama Care — Поддержка клиентов",
-      "supportAgent": "Агент Ayla",
+      "productName": "Sama Mobile",
+      "assistantName": "Maryam Agent",
+      "pageTitle": "Sama Mobile — Поддержка клиентов",
+      "supportAgent": "Maryam Agent",
       "supportTeam": "Команда поддержки"
     },
     "common": {
@@ -81,7 +81,10 @@
         "az": "Azərbaycan dili",
         "en": "English",
         "ru": "Русский"
-      }
+      },
+      "cancel": "Отмена",
+      "skipContent": "Перейти к содержимому",
+      "offline": "Нет подключения к интернету. Восстановите соединение и повторите попытку."
     },
     "navigation": {
       "dashboard": "Панель управления",
@@ -90,7 +93,8 @@
       "policy": "Правила",
       "report": "Отчёт",
       "notifications": "Уведомления",
-      "mainLabel": "Основная навигация"
+      "mainLabel": "Основная навигация",
+      "menu": "Меню навигации"
     },
     "support": {
       "conversations": "Обращения",
@@ -127,15 +131,15 @@
       "callHistory": "История звонков",
       "textConversation": "Текстовый чат",
       "demoResponse": "Демо-ответ",
-      "liveResponse": "Ayla · API",
+      "liveResponse": "Maryam Agent · API",
       "stopResponse": "Остановить ответ",
       "protectedChat": "Ваш чат защищён",
       "listeningHeading": "Я вас слушаю.",
       "voiceHeading": "Обсудим и решим.",
-      "welcomeHeading": "Здравствуйте, я Ayla.",
+      "welcomeHeading": "Здравствуйте, я Maryam Agent.",
       "voiceDemoDescription": "Демонстрация голосового агента",
       "voiceDescription": "Найдите ответы на свои вопросы за один звонок.",
-      "welcomeDescription": "Ваш специалист Sama Care. Чем я могу помочь?",
+      "welcomeDescription": "Ваш специалист Sama Mobile. Чем я могу помочь?",
       "languageHint": "Пишите на азербайджанском, русском или английском",
       "closedBanner": "Этот чат закрыт. Чтобы продолжить, откройте его снова.",
       "composerPlaceholder": "Напишите ваше обращение...",
@@ -154,18 +158,19 @@
       },
       "progress": {
         "investigating": "Проверяем…",
-        "preparingAnswer": "Ayla готовит ответ…",
+        "preparingAnswer": "Maryam Agent готовит ответ…",
         "preparing": "Готовим ответ…",
         "incomplete": "Ответ не завершён. Проверьте сессию.",
         "interrupting": "Останавливаем ответ…"
       },
       "help": {
         "dialogLabel": "О демо",
-        "title": "Знакомство с Sama Care",
+        "title": "Знакомство с Sama Mobile",
         "description": "Платформа текстовой и голосовой поддержки по вопросам мобильной связи.",
         "demoDescription": "Чаты сохраняются в вашем браузере. Текстовые ответы и звонки являются демонстрационными.",
-        "apiDescription": "Текстовый чат подключается к бэкенду Railway через WebSocket. Голосовые звонки запускаются в панели ElevenLabs. Платформа предназначена только для синтетических демо-клиентов."
-      }
+        "apiDescription": "Голосовой звонок открыт на этом экране. Управляйте микрофоном и завершайте звонок."
+      },
+      "newMessages": "Новые сообщения"
     },
     "voice": {
       "unmute": "Включить микрофон",
@@ -173,13 +178,30 @@
       "endCall": "Завершить звонок",
       "startDemoCall": "Начать демо-звонок",
       "demoNotice": "Интеграция реальных звонков будет подключена на следующем этапе",
-      "closePanel": "Закрыть голосовую панель",
-      "startLiveCall": "Поговорить с Ayla",
-      "startInstructions": "Начните звонок в панели ElevenLabs.",
-      "providerDescription": "Голосовые разговоры проходят через ElevenLabs.",
+      "closePanel": "Голосовой звонок открыт на этом экране. Управляйте микрофоном и завершайте звонок.",
+      "startLiveCall": "Поговорить с Maryam Agent",
+      "startInstructions": "Голосовой звонок открыт на этом экране. Управляйте микрофоном и завершайте звонок.",
+      "providerDescription": "Голосовой звонок открыт на этом экране. Управляйте микрофоном и завершайте звонок.",
       "loadError": "Не удалось загрузить голосовой сервис. Используйте текстовый режим.",
       "savedDemoPreview": "Демо-звонок · {seconds} секунд",
-      "savedDemoReply": "Демо-звонок длился {seconds} секунд. Реальный звук не передавался."
+      "savedDemoReply": "Демо-звонок длился {seconds} секунд. Реальный звук не передавался.",
+      "connecting": "Подключение…",
+      "ready": "Готов к звонку",
+      "speaking": "Maryam Agent говорит",
+      "micOff": "Микрофон выключен",
+      "listening": "Слушаю вас",
+      "permissionError": "Нет доступа к микрофону. Разрешите доступ в настройках браузера и повторите.",
+      "connectionError": "Не удалось подключиться. Попробуйте ещё раз.",
+      "call": "Позвонить",
+      "thinking": "Подготовка ответа…",
+      "volume": "Громкость голоса агента",
+      "captions": "Субтитры",
+      "retry": "Позвонить снова",
+      "endConfirm": "Завершить звонок?",
+      "noMicrophone": "Микрофон не найден. Подключите микрофон и повторите попытку.",
+      "insecure": "Для звонков нужен HTTPS или localhost.",
+      "unsupported": "Этот браузер не поддерживает звонки. Попробуйте совместимый браузер.",
+      "networkError": "Соединение прервано. Вы можете позвонить снова."
     },
     "dashboard": {
       "welcome": "С возвращением, {name}",
@@ -285,7 +307,7 @@
         "description": "Каждое решение должно показывать действие, точный пункт правила, факт по счёту и ответ на языке клиента.",
         "doubleChargeTitle": "R-BILL-02 · Двойное списание",
         "refundRules": "При двойном списании лишняя сумма возвращается. R-ADJ-01: лимит автоматического зачисления — 20 AZN на обращение. R-ADJ-02: не более 2 автоматических зачислений за 30 дней.",
-        "source": "Лимит возврата, фактический платёж и разрешения проверяются бэкендом. Источник: техническое задание бэкенда Sama Care v1.0, §4.2."
+        "source": "Лимит возврата, фактический платёж и разрешения проверяются бэкендом. Источник: техническое задание бэкенда Sama Mobile v1.0, §4.2."
       },
       "notifications": {
         "eyebrow": "УВЕДОМЛЕНИЯ",
@@ -408,8 +430,120 @@
       "billingPreview": "Требуется проверка платежа",
       "slaHours": "{count} ч",
       "syntheticFact": "false (синтетический счёт)",
-      "refundPolicy": "Sama Care §4.2: при двойном списании лишняя сумма возвращается.",
-      "decisionDisclaimer": "Демо-решение Sama Care на основе примера факта и правила; платежи не выполнялись."
+      "refundPolicy": "Sama Mobile §4.2: при двойном списании лишняя сумма возвращается.",
+      "decisionDisclaimer": "Демо-решение Sama Mobile на основе примера факта и правила; платежи не выполнялись."
+    },
+    "usage": {
+      "expenses": "Расходы и использование",
+      "myExpenses": "Мои расходы",
+      "summary": "Общая статистика",
+      "summaryHeading": "Абоненты — обзор",
+      "summaryDescription": "Расходы, использование и возможности экономии.",
+      "month": "Месяц",
+      "current": "Текущий месяц",
+      "mockSource": "Тестовые данные",
+      "apiSource": "Данные сервера",
+      "thisMonth": "Расходы за выбранный месяц",
+      "forecast": "Прогноз",
+      "returned": "Возвращено",
+      "netCost": "Чистые расходы",
+      "comparedPrevious": "прогноз к прошлому месяцу",
+      "elapsedDays": "{elapsed}/{total} дней",
+      "monthEndEstimate": "Оценка на конец месяца",
+      "completedMonth": "Завершённый месяц",
+      "creditedBack": "Возвращено на баланс",
+      "afterCredits": "После возвратов",
+      "revenue": "Общие расходы",
+      "subscribers": "Абоненты",
+      "lines": "Абонентские линии",
+      "averageBill": "Средний счёт",
+      "perLine": "На абонента",
+      "creditCount": "{count} возвратов",
+      "savings": "Возможная экономия",
+      "monthlyOpportunity": "Возможная экономия за месяц",
+      "refundHeading": "Sama Mobile вернул вам {amount}",
+      "costBreakdown": "Структура расходов",
+      "costStructure": "Структура расходов",
+      "actualCost": "Фактические расходы",
+      "forecastLegend": "Прозрачный столбец: прогноз",
+      "history": "История расходов",
+      "chartPeriod": "Период графика",
+      "months": "{count} мес.",
+      "forecastNote": "Линейный прогноз без учёта будущих дополнительных пакетов.",
+      "monthEnd": "Прогноз на конец месяца",
+      "averageData": "Средний интернет",
+      "averageVoice": "Средние минуты",
+      "minutes": "мин",
+      "packageUsage": "Использование пакета",
+      "tariffMix": "Распределение тарифов",
+      "internet": "Интернет",
+      "voiceMinutes": "Минуты",
+      "noPackage": "Нет пакета",
+      "payg": "Нет пакета — каждый МБ оплачивается.",
+      "percentUsed": "Использовано {pct}% месячного лимита",
+      "partialMonth": "Расходы и использование только за прошедшие дни.",
+      "internetCategories": "На что уходит интернет?",
+      "daily": "Интернет по дням",
+      "peakDay": "Пик использования: {day}-й день",
+      "noData": "Пока нет данных",
+      "noCosts": "Нет расходов",
+      "recommendations": "Рекомендации",
+      "canSave": "Вы можете сэкономить {amount} в месяц",
+      "talk": "Обсудить с Maryam Agent",
+      "addons": "Пакеты и услуги",
+      "day": "день",
+      "monthUnit": "месяц",
+      "days": "{count} дней",
+      "extraCharges": "Доплата за роуминг",
+      "trend": "Средний счёт и возвраты",
+      "separateScales": "Разные шкалы · AZN",
+      "roamingTrips": "{count} поездок с роумингом",
+      "authError": "Ключ API не принят. Проверьте конфигурацию Netlify.",
+      "notFound": "Эндпоинт usage или данные номера не найдены. Повторите, когда сервер будет готов.",
+      "loadError": "Не удалось загрузить данные. Попробуйте снова.",
+      "invalidResponse": "Ответ usage не соответствует контракту.",
+      "mockMissing": "Нет тестового файла. Добавьте JSON от команды сервера в public/mock/usage.",
+      "costs": {
+        "monthly_fee": "Абонентская плата",
+        "packages": "Дополнительные пакеты",
+        "vas": "Дополнительные услуги",
+        "roaming": "Роуминг",
+        "out_of_bundle": "Сверх пакета",
+        "intl_calls": "Международные звонки"
+      },
+      "categories": {
+        "video": "Видео",
+        "social": "Соцсети",
+        "browsing": "Сайты",
+        "music": "Музыка",
+        "messaging": "Сообщения",
+        "games": "Игры",
+        "maps": "Карты"
+      },
+      "monthNames": [
+        "январь",
+        "февраль",
+        "март",
+        "апрель",
+        "май",
+        "июнь",
+        "июль",
+        "август",
+        "сентябрь",
+        "октябрь",
+        "ноябрь",
+        "декабрь"
+      ]
+    },
+    "avatar": {
+      "label": "Maryam, виртуальный специалист поддержки",
+      "loading": "Подготовка Maryam…"
+    },
+    "theme": {
+      "label": "Оформление",
+      "system": "Системное",
+      "light": "Светлое",
+      "dark": "Тёмное"
     }
   }
 }

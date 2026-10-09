@@ -1,3 +1,4 @@
+import { validateUsage, type LineUsageResponse, type SummaryResponse } from './usage';
 import type { Conversation, DashboardData, SubmitResponse } from './types';
 import type { BackendCase, SessionCreated, FinalEvent, StreamEvent, DemoCustomer } from './backend';
 import { SessionSocket, websocketUrl } from './websocket';
@@ -27,7 +28,7 @@ async function request<T>(path:string,options:RequestInit={}):Promise<T>{
  if(!hasAccess())throw new ApiError(config.auth==='direct'?'Demo API açarını daxil edin.':'Demo giriş kodunu daxil edin.',401);
  if(!config.baseUrl)throw new ApiError('VITE_API_BASE_URL təyin edilməyib.');
  const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),20000);
- try{const response=await fetch(`${config.baseUrl}${path}`,{...options,signal:controller.signal,credentials:config.auth==='proxy'?'include':'omit',headers:{...headers(),...options.headers}});if(!response.ok){const error=await response.json().catch(()=>({}));throw new ApiError(error.message||`Sorğu uğursuz oldu (${response.status}).`,response.status);}return await response.json() as T}catch(e){if(e instanceof ApiError)throw e;throw new ApiError(e instanceof Error&&e.name==='AbortError'?'Sorğunun vaxtı bitdi. Yenidən cəhd edin.':'Serverə bağlantı alınmadı.')}finally{clearTimeout(timeout)}
+ try{const response=await fetch(`${config.baseUrl}${path}`,{...options,signal:controller.signal,credentials:config.auth==='proxy'?'include':'omit',headers:{...headers(),...options.headers}});if(!response.ok){const error=await response.json().catch(()=>({}));throw new ApiError(error.message||error.error?.code||error.detail?.code||(typeof error.detail==='string'?error.detail:'')||`Sorğu uğursuz oldu (${response.status}).`,response.status);}return await response.json() as T}catch(e){if(e instanceof ApiError)throw e;throw new ApiError(e instanceof Error&&e.name==='AbortError'?'Sorğunun vaxtı bitdi. Yenidən cəhd edin.':'Serverə bağlantı alınmadı.')}finally{clearTimeout(timeout)}
 }
 function mapCase(c:BackendCase):Conversation {return {id:c.case_id,sessionId:c.session_id,title:c.summary||c.intent||c.root_cause||'Yeni müraciət',preview:c.root_cause||'Müraciət qeydə alındı',time:'',status:c.status==='RESOLVED'?'closed':'open',channel:c.channel==='voice'?'call':'text',queue:c.status==='ESCALATED'?'agent':c.status==='OPEN'?'unassigned':'ai',priority:c.priority==='P1'?'urgent':c.priority==='P2'?'high':'normal',customer:c.msisdn.replace(/(\+99498)\d+(\d{4})$/,'$1***$2'),assignee:c.team||undefined,createdAt:c.created_at,waitingMinutes:Math.max(0,Math.floor((Date.now()-Date.parse(c.created_at))/60000)),final:c.decision?{message_id:'',decision:c.decision,root_cause:c.root_cause,amount:c.amount,case_id:c.case_id,citations:c.citations||[],rule_ids:c.rule_ids||[],latency_ms:c.latency_ms||[...(c.transcript||[])].reverse().find(m=>m.role==='assistant')?.latency_ms}:undefined,messages:(c.transcript||[]).filter(m=>m.role==='user'||m.role==='assistant'),backendCase:c}}
 async function cases():Promise<BackendCase[]>{const result=await request<BackendCase[]|{cases:BackendCase[]}>('/v1/cases?limit=250');const list=Array.isArray(result)?result:result.cases;if(!Array.isArray(list)||list.some(c=>!c.case_id||!c.status))throw new ApiError('Backend case formatı müqaviləyə uyğun deyil.');return list}
@@ -73,8 +74,15 @@ async function submitStream(text:string,id?:string,onEvent?:(event:StreamEvent)=
 }
 
 function realDashboard(raw:BackendCase[]):DashboardData {const closed=raw.filter(c=>c.status==='RESOLVED'),today=new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Baku'});const daily=new Map<string,{date:string;incoming:number;resolved:number}>();for(const c of raw){const d=c.created_at.slice(0,10);if(!daily.has(d))daily.set(d,{date:d,incoming:0,resolved:0});daily.get(d)!.incoming++;if(c.closed_at||(c.status==='RESOLVED'&&c.updated_at)){const r=(c.closed_at||c.updated_at)!.slice(0,10);if(!daily.has(r))daily.set(r,{date:r,incoming:0,resolved:0});daily.get(r)!.resolved++}}const times=raw.flatMap(c=>c.latency_ms?[c.latency_ms.first_token/1000]:[]).sort((a,b)=>a-b);return {conversations:raw.map(mapCase),volume:[...daily.values()].sort((a,b)=>a.date.localeCompare(b.date)),medianFirstResponseSeconds:times.length?Math.round(times[Math.floor(times.length/2)]):null,resolvedToday:closed.filter(c=>(c.closed_at||c.updated_at)?.startsWith(today)).length,resolution:{ai:closed.filter(c=>!c.team).length,agent:closed.filter(c=>c.team).length,handoff:raw.filter(c=>c.status==='ESCALATED').length}}}
+async function usageRequest<T extends LineUsageResponse|SummaryResponse>(path:string,mock:string,months:number):Promise<T>{
+ if(import.meta.env.VITE_USE_MOCK==='1'){const response=await fetch(`/mock/usage/${mock}.json`);if(!response.ok)throw new ApiError('usage.mockMissing',response.status);let data:T;try{data=validateUsage(await response.json())}catch{throw new ApiError('usage.invalidResponse')}return {...data,months:data.months.slice(0,months)} as T}
+ return validateUsage(await request<T>(path));
+}
 export const supportApi={
  open:openSession,
+ getCustomer:()=>demoMsisdn,
+ lineUsage(msisdn:string,months=6){return usageRequest<LineUsageResponse>(`/v1/lines/${encodeURIComponent(msisdn)}/usage?months=${months}`,msisdn.replace('+',''),months)},
+ usageSummary(months=6){return usageRequest<SummaryResponse>(`/v1/usage/summary?months=${months}`,'summary',months)},
  async demoCustomers():Promise<DemoCustomer[]>{const data=await request<DemoCustomer[]|{cases:DemoCustomer[]}>('/v1/demo/cases');const list=Array.isArray(data)?data:data.cases;return list},
  chooseCustomer(msisdn:string){demoMsisdn=msisdn},
  async interrupt(id:string){const c=sessionIndex[id];if(!c)return;const session=c.sessionId||c.id;if(config.transport==='websocket')sockets.get(session)?.interrupt();else await request(`/v1/sessions/${encodeURIComponent(session)}/interrupt`,{method:'POST',body:JSON.stringify({heard_text:''})})},

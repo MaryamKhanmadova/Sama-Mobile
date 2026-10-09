@@ -1,15 +1,15 @@
 {
   "_meta": {
-    "product": "Sama Care",
+    "product": "Sama Mobile",
     "locale": "en",
     "version": 1,
-    "purpose": "AZ / EN / RU UI tərcümələri üçün mətn və kontekst kataloqu. Hələ dil seçimi aktivləşdirilməyib.",
+    "purpose": "AZ / EN / RU UI mətn və kontekst kataloqu. Dil seçimi aktivdir.",
     "instructions": [
       "Bu faylı az.json, en.json və ru.json kimi üç nüsxə hazırla.",
       "Yalnız messages içindəki dəyərləri tərcümə et; açarları, quruluşu və array sırasını saxla.",
       "Hər nüsxədə locale dəyərini az, en və ya ru et.",
       "{count}, {name}, {amount}, {seconds}, {minutes}, {latency}, {date}, {incoming}, {resolved}, {openCount}, {overdueCount}, {urgentCount}, {sourceNote}, {team}, {status} placeholder-lərini dəyişmə; cümlədə yerini dəyişmək olar.",
-      "Sama Care və Ayla adlarını, API/WS/SSE/WebSocket/ElevenLabs/Railway adlarını, AZN və qayda ID-lərini saxla.",
+      "Sama Mobile və Maryam Agent adlarını, API/WS/SSE/WebSocket/ElevenLabs/Railway adlarını, AZN və qayda ID-lərini saxla.",
       "Müştəri adları, telefonlar, ticket ID-ləri, backend kodları və dinamik hesab məlumatları tərcümə mətnləri deyil."
     ],
     "sections": {
@@ -17,7 +17,7 @@
       "common": "Ortaq düymələr, statuslar, formatlar və vahidlər.",
       "navigation": "Dashboard naviqasiyası.",
       "support": "Mətn/zəng səhifəsi: tarixçə, axtarış, giriş, promptlar, composer, help modal və axın vəziyyətləri. Dashboard axtarışı çıxarılıb; tarixçə axtarışı saxlanılıb.",
-      "voice": "Demo zəng və ElevenLabs panelinin frontend mətnləri. ElevenLabs widget-in daxili mətnləri ayrıca vendor tərəfindən idarə olunur.",
+      "voice": "Ana ekrandakı səsli dəstək panelinin frontend mətnləri.",
       "dashboard": "KPI, növbələr, qrafik, nəticələr, filterlər, helper, detallar, qaydalar, bildirişlər və CSV başlıqları.",
       "events": "Əməliyyat nəticəsi, insana ötürmə və Niyə? paneli.",
       "actions": "Köhnə/demo qərar növlərinin insanın oxuya biləcəyi adları.",
@@ -41,10 +41,10 @@
   },
   "messages": {
     "brand": {
-      "productName": "Sama Care",
-      "assistantName": "Ayla",
-      "pageTitle": "Sama Care — Customer Support",
-      "supportAgent": "Ayla agent",
+      "productName": "Sama Mobile",
+      "assistantName": "Maryam Agent",
+      "pageTitle": "Sama Mobile — Customer Support",
+      "supportAgent": "Maryam Agent",
       "supportTeam": "Support Team"
     },
     "common": {
@@ -80,7 +80,10 @@
         "az": "Azərbaycan dili",
         "en": "English",
         "ru": "Русский"
-      }
+      },
+      "cancel": "Cancel",
+      "skipContent": "Skip to main content",
+      "offline": "You are offline. Restore your connection and try again."
     },
     "navigation": {
       "dashboard": "Dashboard",
@@ -89,7 +92,8 @@
       "policy": "Policies",
       "report": "Report",
       "notifications": "Notifications",
-      "mainLabel": "Main Navigation"
+      "mainLabel": "Main Navigation",
+      "menu": "Navigation menu"
     },
     "support": {
       "conversations": "Conversations",
@@ -126,15 +130,15 @@
       "callHistory": "Call History",
       "textConversation": "Text Conversation",
       "demoResponse": "Demo Response",
-      "liveResponse": "Ayla · Live API",
+      "liveResponse": "Maryam Agent · Live API",
       "stopResponse": "Stop Response",
       "protectedChat": "Your chat is protected",
       "listeningHeading": "Listening to you.",
       "voiceHeading": "Speak, let's resolve it.",
-      "welcomeHeading": "Hello, I'm Ayla.",
+      "welcomeHeading": "Hello, I'm Maryam Agent.",
       "voiceDemoDescription": "Voice agent demo preview",
       "voiceDescription": "Find answers to your questions in one call.",
-      "welcomeDescription": "Your Sama Care customer specialist. How can I help you?",
+      "welcomeDescription": "Your Sama Mobile customer specialist. How can I help you?",
       "languageHint": "Write in Azerbaijani, Russian, or English",
       "closedBanner": "This conversation is closed. Reopen it to continue.",
       "composerPlaceholder": "Type your message here...",
@@ -153,18 +157,19 @@
       },
       "progress": {
         "investigating": "Investigating…",
-        "preparingAnswer": "Ayla is preparing an answer…",
+        "preparingAnswer": "Maryam Agent is preparing an answer…",
         "preparing": "Preparing answer…",
         "incomplete": "Answer incomplete. Please check session.",
         "interrupting": "Stopping response…"
       },
       "help": {
         "dialogLabel": "About Demo",
-        "title": "Meet Sama Care",
+        "title": "Meet Sama Mobile",
         "description": "Text and voice support platform for your telecom requests.",
         "demoDescription": "Conversations are saved in your browser. Text and calls are sample data.",
-        "apiDescription": "Text chat connects to the Railway backend via WebSocket. Voice is initiated from the ElevenLabs panel. This platform is solely for synthetic demo customers."
-      }
+        "apiDescription": "Voice calls open on this screen. You can control the microphone and end the call."
+      },
+      "newMessages": "New messages"
     },
     "voice": {
       "unmute": "Unmute",
@@ -172,13 +177,30 @@
       "endCall": "End Call",
       "startDemoCall": "Start Demo Call",
       "demoNotice": "Real call integration will be added in the next phase",
-      "closePanel": "Close Voice Panel",
-      "startLiveCall": "Talk Live with Ayla",
-      "startInstructions": "Use the ElevenLabs panel to start the call.",
-      "providerDescription": "Voice communication is powered by ElevenLabs.",
+      "closePanel": "Voice calls open on this screen. You can control the microphone and end the call.",
+      "startLiveCall": "Talk Live with Maryam Agent",
+      "startInstructions": "Voice calls open on this screen. You can control the microphone and end the call.",
+      "providerDescription": "Voice calls open on this screen. You can control the microphone and end the call.",
       "loadError": "Voice service failed to load. Please use text mode.",
       "savedDemoPreview": "Demo Call · {seconds} seconds",
-      "savedDemoReply": "Demo call lasted {seconds} seconds. No real audio was transmitted."
+      "savedDemoReply": "Demo call lasted {seconds} seconds. No real audio was transmitted.",
+      "connecting": "Connecting…",
+      "ready": "Ready to call",
+      "speaking": "Maryam Agent is speaking",
+      "micOff": "Microphone muted",
+      "listening": "Listening to you",
+      "permissionError": "Microphone permission was denied. Allow it in your browser settings and retry.",
+      "connectionError": "Could not connect to the call. Please retry.",
+      "call": "Call",
+      "thinking": "Preparing an answer…",
+      "volume": "Agent speaker volume",
+      "captions": "Captions",
+      "retry": "Call again",
+      "endConfirm": "End this call?",
+      "noMicrophone": "No microphone found. Connect a microphone and try again.",
+      "insecure": "Voice calls require HTTPS or localhost.",
+      "unsupported": "This browser does not support voice calls. Try a compatible browser.",
+      "networkError": "The call lost its connection. You can call again."
     },
     "dashboard": {
       "welcome": "Welcome back, {name}",
@@ -284,7 +306,7 @@
         "description": "Every decision action must display the exact policy clause, account fact, and response in customer language.",
         "doubleChargeTitle": "R-BILL-02 · Double Charge",
         "refundRules": "Overcharged amount is refunded. R-ADJ-01: auto credit limit 20 AZN per request. R-ADJ-02: max 2 auto credits within 30 days.",
-        "source": "Refund limits, actual payments, and permissions must be verified by the backend. Source: Sama Care backend technical specification v1.0, §4.2."
+        "source": "Refund limits, actual payments, and permissions must be verified by the backend. Source: Sama Mobile backend technical specification v1.0, §4.2."
       },
       "notifications": {
         "eyebrow": "NOTIFICATIONS",
@@ -407,8 +429,120 @@
       "billingPreview": "Billing verification required",
       "slaHours": "{count} hour(s)",
       "syntheticFact": "false (synthetic account)",
-      "refundPolicy": "Sama Care §4.2: excess amount refunded on double charge.",
-      "decisionDisclaimer": "Sama Care demo decision based on sample facts and policy; no payment executed."
+      "refundPolicy": "Sama Mobile §4.2: excess amount refunded on double charge.",
+      "decisionDisclaimer": "Sama Mobile demo decision based on sample facts and policy; no payment executed."
+    },
+    "usage": {
+      "expenses": "Costs & usage",
+      "myExpenses": "My expenses",
+      "summary": "Overview",
+      "summaryHeading": "Subscribers at a glance",
+      "summaryDescription": "Costs, usage and savings opportunities.",
+      "month": "Month",
+      "current": "Current month",
+      "mockSource": "Mock data",
+      "apiSource": "Backend data",
+      "thisMonth": "Selected month cost",
+      "forecast": "Forecast",
+      "returned": "Refunded",
+      "netCost": "Net cost",
+      "comparedPrevious": "forecast vs previous month",
+      "elapsedDays": "{elapsed}/{total} days",
+      "monthEndEstimate": "Estimated month end",
+      "completedMonth": "Completed month",
+      "creditedBack": "Credited back to balance",
+      "afterCredits": "After refunds",
+      "revenue": "Total spending",
+      "subscribers": "Subscribers",
+      "lines": "Subscriber lines",
+      "averageBill": "Average bill",
+      "perLine": "Per subscriber",
+      "creditCount": "{count} refunds",
+      "savings": "Potential savings",
+      "monthlyOpportunity": "Monthly savings opportunity",
+      "refundHeading": "Sama Mobile refunded {amount}",
+      "costBreakdown": "Cost breakdown",
+      "costStructure": "Cost structure",
+      "actualCost": "Actual spending",
+      "forecastLegend": "Transparent bar: forecast",
+      "history": "Spending history",
+      "chartPeriod": "Chart period",
+      "months": "{count} months",
+      "forecastNote": "Linear forecast; does not include future additional packages.",
+      "monthEnd": "Month-end forecast",
+      "averageData": "Average data",
+      "averageVoice": "Average voice",
+      "minutes": "min",
+      "packageUsage": "Package usage",
+      "tariffMix": "Tariff distribution",
+      "internet": "Internet",
+      "voiceMinutes": "Voice minutes",
+      "noPackage": "No package",
+      "payg": "No data package — each MB is billed.",
+      "percentUsed": "{pct}% of monthly allowance used",
+      "partialMonth": "Usage and costs cover elapsed days only.",
+      "internetCategories": "Where does your data go?",
+      "daily": "Daily data usage",
+      "peakDay": "Peak usage: day {day}",
+      "noData": "No data yet",
+      "noCosts": "No spending",
+      "recommendations": "Recommendations",
+      "canSave": "You could save {amount} per month",
+      "talk": "Talk to Maryam Agent",
+      "addons": "Packages & services",
+      "day": "day",
+      "monthUnit": "month",
+      "days": "{count} days",
+      "extraCharges": "Extra roaming charges",
+      "trend": "Average bill & refunds",
+      "separateScales": "Separate scales · AZN",
+      "roamingTrips": "{count} roaming trips",
+      "authError": "API key rejected. Check Netlify server configuration.",
+      "notFound": "Usage endpoint or line data not found. Retry when the backend is ready.",
+      "loadError": "Could not load usage data. Please retry.",
+      "invalidResponse": "Usage response does not match the contract.",
+      "mockMissing": "Mock file missing. Add the backend JSON files to public/mock/usage.",
+      "costs": {
+        "monthly_fee": "Monthly fee",
+        "packages": "Additional packages",
+        "vas": "Extra services",
+        "roaming": "Roaming",
+        "out_of_bundle": "Out-of-bundle usage",
+        "intl_calls": "International calls"
+      },
+      "categories": {
+        "video": "Video",
+        "social": "Social networks",
+        "browsing": "Browsing",
+        "music": "Music",
+        "messaging": "Messaging",
+        "games": "Games",
+        "maps": "Maps"
+      },
+      "monthNames": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ]
+    },
+    "avatar": {
+      "label": "Maryam, virtual customer specialist",
+      "loading": "Preparing Maryam…"
+    },
+    "theme": {
+      "label": "Appearance",
+      "system": "System",
+      "light": "Light",
+      "dark": "Dark"
     }
   }
 }

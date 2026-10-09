@@ -1,0 +1,221 @@
+{
+  "currency": "AZN",
+  "months": [
+    {
+      "msisdn": "#ALL",
+      "month": "2026-10",
+      "lines": 10,
+      "currency": "AZN",
+      "is_current": true,
+      "avg_total": 16.8,
+      "avg_data_mb": 9216,
+      "avg_voice_min": 110,
+      "revenue_total": 168.0,
+      "credits_total": 0,
+      "credits_count": 0,
+      "potential_savings_total": 62,
+      "cost_breakdown": {
+        "monthly_fee": 150,
+        "packages": 0,
+        "vas": 18.0,
+        "roaming": 0,
+        "out_of_bundle": 0,
+        "intl_calls": 0
+      },
+      "data_by_category": {
+        "video": 51200,
+        "social": 20480,
+        "browsing": 10240,
+        "messaging": 5120,
+        "music": 5120
+      },
+      "tariff_mix": {
+        "Səma Plus": 4,
+        "Səma Max": 3,
+        "Səma Start": 2,
+        "Səma Sərbəst": 1
+      },
+      "roaming_trips": 0
+    },
+    {
+      "msisdn": "#ALL",
+      "month": "2026-09",
+      "lines": 10,
+      "currency": "AZN",
+      "is_current": false,
+      "avg_total": 19,
+      "avg_data_mb": 9216,
+      "avg_voice_min": 110,
+      "revenue_total": 190,
+      "credits_total": 30,
+      "credits_count": 10,
+      "potential_savings_total": 62,
+      "cost_breakdown": {
+        "monthly_fee": 150,
+        "packages": 0,
+        "vas": 40,
+        "roaming": 0,
+        "out_of_bundle": 0,
+        "intl_calls": 0
+      },
+      "data_by_category": {
+        "video": 51200,
+        "social": 20480,
+        "browsing": 10240,
+        "messaging": 5120,
+        "music": 5120
+      },
+      "tariff_mix": {
+        "Səma Plus": 4,
+        "Səma Max": 3,
+        "Səma Start": 2,
+        "Səma Sərbəst": 1
+      },
+      "roaming_trips": 0
+    },
+    {
+      "msisdn": "#ALL",
+      "month": "2026-08",
+      "lines": 10,
+      "currency": "AZN",
+      "is_current": false,
+      "avg_total": 31,
+      "avg_data_mb": 9216,
+      "avg_voice_min": 110,
+      "revenue_total": 310,
+      "credits_total": 0,
+      "credits_count": 0,
+      "potential_savings_total": 62,
+      "cost_breakdown": {
+        "monthly_fee": 150,
+        "packages": 0,
+        "vas": 40,
+        "roaming": 120,
+        "out_of_bundle": 0,
+        "intl_calls": 0
+      },
+      "data_by_category": {
+        "video": 51200,
+        "social": 20480,
+        "browsing": 10240,
+        "messaging": 5120,
+        "music": 5120
+      },
+      "tariff_mix": {
+        "Səma Plus": 4,
+        "Səma Max": 3,
+        "Səma Start": 2,
+        "Səma Sərbəst": 1
+      },
+      "roaming_trips": 2
+    },
+    {
+      "msisdn": "#ALL",
+      "month": "2026-07",
+      "lines": 10,
+      "currency": "AZN",
+      "is_current": false,
+      "avg_total": 19,
+      "avg_data_mb": 9216,
+      "avg_voice_min": 110,
+      "revenue_total": 190,
+      "credits_total": 0,
+      "credits_count": 0,
+      "potential_savings_total": 62,
+      "cost_breakdown": {
+        "monthly_fee": 150,
+        "packages": 0,
+        "vas": 40,
+        "roaming": 0,
+        "out_of_bundle": 0,
+        "intl_calls": 0
+      },
+      "data_by_category": {
+        "video": 51200,
+        "social": 20480,
+        "browsing": 10240,
+        "messaging": 5120,
+        "music": 5120
+      },
+      "tariff_mix": {
+        "Səma Plus": 4,
+        "Səma Max": 3,
+        "Səma Start": 2,
+        "Səma Sərbəst": 1
+      },
+      "roaming_trips": 0
+    },
+    {
+      "msisdn": "#ALL",
+      "month": "2026-06",
+      "lines": 10,
+      "currency": "AZN",
+      "is_current": false,
+      "avg_total": 19,
+      "avg_data_mb": 9216,
+      "avg_voice_min": 110,
+      "revenue_total": 190,
+      "credits_total": 0,
+      "credits_count": 0,
+      "potential_savings_total": 62,
+      "cost_breakdown": {
+        "monthly_fee": 150,
+        "packages": 0,
+        "vas": 40,
+        "roaming": 0,
+        "out_of_bundle": 0,
+        "intl_calls": 0
+      },
+      "data_by_category": {
+        "video": 51200,
+        "social": 20480,
+        "browsing": 10240,
+        "messaging": 5120,
+        "music": 5120
+      },
+      "tariff_mix": {
+        "Səma Plus": 4,
+        "Səma Max": 3,
+        "Səma Start": 2,
+        "Səma Sərbəst": 1
+      },
+      "roaming_trips": 0
+    },
+    {
+      "msisdn": "#ALL",
+      "month": "2026-05",
+      "lines": 10,
+      "currency": "AZN",
+      "is_current": false,
+      "avg_total": 19,
+      "avg_data_mb": 9216,
+      "avg_voice_min": 110,
+      "revenue_total": 190,
+      "credits_total": 0,
+      "credits_count": 0,
+      "potential_savings_total": 62,
+      "cost_breakdown": {
+        "monthly_fee": 150,
+        "packages": 0,
+        "vas": 40,
+        "roaming": 0,
+        "out_of_bundle": 0,
+        "intl_calls": 0
+      },
+      "data_by_category": {
+        "video": 51200,
+        "social": 20480,
+        "browsing": 10240,
+        "messaging": 5120,
+        "music": 5120
+      },
+      "tariff_mix": {
+        "Səma Plus": 4,
+        "Səma Max": 3,
+        "Səma Start": 2,
+        "Səma Sərbəst": 1
+      },
+      "roaming_trips": 0
+    }
+  ]
+}
