@@ -1,0 +1,345 @@
+[
+ {
+  "item_id": "T_START",
+  "item_type": "tariff",
+  "name": "Səma Start",
+  "monthly_fee": 9.0,
+  "data_mb": 10240,
+  "voice_min": 300,
+  "sms": 100
+ },
+ {
+  "item_id": "T_PLUS",
+  "item_type": "tariff",
+  "name": "Səma Plus",
+  "monthly_fee": 15.0,
+  "data_mb": 25600,
+  "voice_min": 800,
+  "sms": 300
+ },
+ {
+  "item_id": "T_MAX",
+  "item_type": "tariff",
+  "name": "Səma Max",
+  "monthly_fee": 25.0,
+  "data_mb": null,
+  "fup_mb": 61440,
+  "voice_min": 1500,
+  "sms": 500
+ },
+ {
+  "item_id": "T_GENC",
+  "item_type": "tariff",
+  "name": "Səma Gənc",
+  "monthly_fee": 7.0,
+  "data_mb": 12288,
+  "voice_min": 200,
+  "sms": 100,
+  "max_age": 25
+ },
+ {
+  "item_id": "T_PAYG",
+  "item_type": "tariff",
+  "name": "Səma Sərbəst",
+  "monthly_fee": 0.0,
+  "data_mb": 0,
+  "voice_min": 0,
+  "sms": 0
+ },
+ {
+  "item_id": "T_BIZNES",
+  "item_type": "tariff",
+  "name": "Səma Biznes",
+  "monthly_fee": 30.0,
+  "data_mb": 40960,
+  "voice_min": 2000,
+  "sms": 500,
+  "postpaid": true
+ },
+ {
+  "item_id": "P_NET5",
+  "item_type": "package",
+  "name": "İnternet 5 GB / 7 gün",
+  "price": 3.0,
+  "data_mb": 5120,
+  "days": 7
+ },
+ {
+  "item_id": "P_NET20",
+  "item_type": "package",
+  "name": "İnternet 20 GB / 30 gün",
+  "price": 10.0,
+  "data_mb": 20480,
+  "days": 30
+ },
+ {
+  "item_id": "P_GECE",
+  "item_type": "package",
+  "name": "Gecə 10 GB (01:00–07:00) / 30 gün",
+  "price": 2.0,
+  "data_mb": 10240,
+  "days": 30
+ },
+ {
+  "item_id": "P_SOSIAL",
+  "item_type": "package",
+  "name": "Sosial 10 GB / 30 gün",
+  "price": 4.0,
+  "data_mb": 10240,
+  "days": 30
+ },
+ {
+  "item_id": "P_SMS200",
+  "item_type": "package",
+  "name": "200 SMS / 30 gün",
+  "price": 1.5,
+  "sms": 200,
+  "days": 30
+ },
+ {
+  "item_id": "P_TR1",
+  "item_type": "package",
+  "name": "Rouminq Türkiyə 1 GB / 7 gün",
+  "price": 8.0,
+  "data_mb": 1024,
+  "days": 7,
+  "country": "TR"
+ },
+ {
+  "item_id": "P_GE1",
+  "item_type": "package",
+  "name": "Rouminq Gürcüstan 1 GB / 7 gün",
+  "price": 6.0,
+  "data_mb": 1024,
+  "days": 7,
+  "country": "GE"
+ },
+ {
+  "item_id": "P_EU2",
+  "item_type": "package",
+  "name": "Rouminq Avropa 2 GB / 10 gün",
+  "price": 20.0,
+  "data_mb": 2048,
+  "days": 10,
+  "zone": "Z2"
+ },
+ {
+  "item_id": "P_FUP10",
+  "item_type": "package",
+  "name": "Max sürət əlavəsi 10 GB",
+  "price": 5.0,
+  "data_mb": 10240,
+  "days": 30
+ },
+ {
+  "item_id": "V_FAL",
+  "item_type": "vas",
+  "name": "Ulduz Falı",
+  "price": 0.2,
+  "period": "gün"
+ },
+ {
+  "item_id": "V_MELODIYA",
+  "item_type": "vas",
+  "name": "Səma Melodiya",
+  "price": 1.5,
+  "period": "ay"
+ },
+ {
+  "item_id": "V_XEBER",
+  "item_type": "vas",
+  "name": "Xəbər+",
+  "price": 0.1,
+  "period": "gün"
+ },
+ {
+  "item_id": "V_OYUN",
+  "item_type": "vas",
+  "name": "Oyun Klubu",
+  "price": 0.3,
+  "period": "gün"
+ },
+ {
+  "item_id": "V_QORUMA",
+  "item_type": "vas",
+  "name": "Səma Qoruma",
+  "price": 2.0,
+  "period": "ay"
+ },
+ {
+  "item_id": "PR_YUKLE2GB",
+  "item_type": "promo",
+  "name": "Yüklə-Qazan: 10 AZN+ yükləməyə 2 GB bonus",
+  "bonus_mb": 2048,
+  "days": 7,
+  "min_topup": 10.0,
+  "channel": "app"
+ },
+ {
+  "item_id": "Z1",
+  "item_type": "roaming_zone",
+  "countries": [
+   "TR",
+   "GE",
+   "RU",
+   "IR"
+  ],
+  "data_per_mb": 0.5,
+  "call_out": 0.6,
+  "call_in": 0.3,
+  "sms": 0.2
+ },
+ {
+  "item_id": "Z2",
+  "item_type": "roaming_zone",
+  "countries": [
+   "DE",
+   "FR",
+   "IT",
+   "ES",
+   "AE",
+   "GB",
+   "NL"
+  ],
+  "data_per_mb": 1.0,
+  "call_out": 1.2,
+  "call_in": 0.6,
+  "sms": 0.3
+ },
+ {
+  "item_id": "Z3",
+  "item_type": "roaming_zone",
+  "countries": [
+   "*"
+  ],
+  "data_per_mb": 3.0,
+  "call_out": 3.0,
+  "call_in": 1.5,
+  "sms": 0.5
+ },
+ {
+  "item_id": "OOB",
+  "item_type": "rates",
+  "data_per_mb": 0.05,
+  "data_daily_cap": 3.0,
+  "voice_per_min": 0.08,
+  "sms": 0.05
+ },
+ {
+  "item_id": "INTL_CALLS",
+  "item_type": "rates",
+  "TR": 0.45,
+  "RU": 0.4,
+  "GE": 0.35,
+  "EU": 0.7,
+  "OTHER": 1.2
+ },
+ {
+  "item_id": "LOAN",
+  "item_type": "rates",
+  "amounts": {
+   "1": 0.1,
+   "2": 0.2,
+   "3": 0.3
+  },
+  "min_tenure_months": 3
+ },
+ {
+  "item_id": "BALANCE_TRANSFER",
+  "item_type": "rates",
+  "fee": 0.1,
+  "min": 0.5,
+  "max_per_day": 20.0
+ },
+ {
+  "item_id": "POLICY",
+  "item_type": "policy",
+  "auto_credit_max_per_case": 20.0,
+  "auto_credits_per_30d": 2,
+  "goodwill_min_tenure_months": 24,
+  "goodwill_share": 0.5,
+  "goodwill_max": 3.0,
+  "goodwill_cooldown_days": 180,
+  "topup_credit_grace_min": 30,
+  "package_activation_grace_min": 10,
+  "repeat_contact_threshold": 2,
+  "outage_tiers": [
+   {
+    "min_hours": 24,
+    "amount": 5.0
+   },
+   {
+    "min_hours": 12,
+    "amount": 3.0
+   },
+   {
+    "min_hours": 4,
+    "amount": 1.0
+   }
+  ]
+ },
+ {
+  "item_id": "BILLING",
+  "item_type": "team",
+  "az": "hesablaşma üzrə mütəxəssis",
+  "ru": "специалист по расчётам",
+  "sla_az": "2 saat",
+  "sla_ru": "2 часов"
+ },
+ {
+  "item_id": "NETWORK",
+  "item_type": "team",
+  "az": "şəbəkə mühəndisi",
+  "ru": "сетевой инженер",
+  "sla_az": "24 saat",
+  "sla_ru": "24 часов"
+ },
+ {
+  "item_id": "SECURITY",
+  "item_type": "team",
+  "az": "təhlükəsizlik qrupu",
+  "ru": "служба безопасности",
+  "sla_az": "15 dəqiqə",
+  "sla_ru": "15 минут"
+ },
+ {
+  "item_id": "PORTING",
+  "item_type": "team",
+  "az": "nömrə köçürmə üzrə mütəxəssis",
+  "ru": "специалист по переносу номера",
+  "sla_az": "4 saat",
+  "sla_ru": "4 часов"
+ },
+ {
+  "item_id": "CORPORATE",
+  "item_type": "team",
+  "az": "korporativ müştəri meneceri",
+  "ru": "менеджер корпоративных клиентов",
+  "sla_az": "4 iş saatı",
+  "sla_ru": "4 рабочих часов"
+ },
+ {
+  "item_id": "COMPLAINTS",
+  "item_type": "team",
+  "az": "şikayətlər üzrə baş mütəxəssis",
+  "ru": "старший специалист по жалобам",
+  "sla_az": "1 iş günü",
+  "sla_ru": "1 рабочего дня"
+ },
+ {
+  "item_id": "RECORDS",
+  "item_type": "team",
+  "az": "müştəri qeydləri şöbəsi",
+  "ru": "отдел клиентских данных",
+  "sla_az": "1 iş günü",
+  "sla_ru": "1 рабочего дня"
+ },
+ {
+  "item_id": "DEVICE",
+  "item_type": "team",
+  "az": "cihaz və nisyə ödəniş üzrə mütəxəssis",
+  "ru": "специалист по рассрочке устройств",
+  "sla_az": "4 saat",
+  "sla_ru": "4 часов"
+ }
+]

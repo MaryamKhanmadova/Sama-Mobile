@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Məryəm Avatar Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+<style>
+  :root { --violet: #6d28d9; --lav: #c4b5fd; --ink: #1e1033; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; font-family: Manrope, "Segoe UI", sans-serif; color: var(--ink);
+    background: radial-gradient(1200px 700px at 20% 10%, #f3e8ff 0%, transparent 60%),
+                radial-gradient(900px 600px at 90% 90%, #e9d5ff 0%, transparent 60%), #faf7ff;
+    display: grid; place-items: center; padding: 16px; }
+  .wrap { width: min(1100px, 100%); display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; }
+  @media (max-width: 860px) { .wrap { grid-template-columns: 1fr; } }
+  .glass { background: rgba(255,255,255,.55); border: 1px solid rgba(255,255,255,.75); border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(76,29,149,.12), inset 0 1px 0 rgba(255,255,255,.9);
+    backdrop-filter: blur(18px) saturate(140%); -webkit-backdrop-filter: blur(18px) saturate(140%); }
+  #stage { position: relative; aspect-ratio: 1 / 1.05; overflow: hidden;
+    background: radial-gradient(60% 55% at 50% 38%, rgba(196,181,253,.55), rgba(255,255,255,0) 70%); }
+  #avatar { position: absolute; inset: 0; }
+  .badge { position: absolute; left: 18px; top: 16px; padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600;
+    background: rgba(109,40,217,.10); color: var(--violet); border: 1px solid rgba(109,40,217,.18); }
+  .badge i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #34d399; margin-right: 6px; }
+  .panel { padding: 22px; display: flex; flex-direction: column; gap: 18px; }
+  h1 { margin: 0; font-size: 24px; } h1 span { color: var(--violet); }
+  .muted { margin: -10px 0 0; color: #6b5b8a; font-size: 14px; }
+  .group h3 { margin: 0 0 8px; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #8b7aa8; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; }
+  button { font: 600 14px Manrope, sans-serif; padding: 9px 14px; border-radius: 12px; cursor: pointer; color: var(--ink);
+    background: rgba(255,255,255,.7); border: 1px solid rgba(109,40,217,.18); transition: .15s; }
+  button:hover { border-color: var(--violet); transform: translateY(-1px); }
+  button.on { background: var(--violet); color: #fff; border-color: var(--violet); }
+  textarea { width: 100%; min-height: 70px; border-radius: 14px; border: 1px solid rgba(109,40,217,.2); padding: 10px 12px;
+    font: 14px Manrope, sans-serif; background: rgba(255,255,255,.7); resize: vertical; }
+  .note { font-size: 12px; color: #8b7aa8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="glass" id="stage"><div id="avatar"></div><div class="badge" id="badge"><i></i>Məryəm · idle</div></div>
+  <div class="glass panel">
+    <div><h1>Məryəm <span>3D avatar</span></h1></div>
+    <p class="muted">Lipsync, vəziyyətlər və emosiyalar — frontend inteqrasiyası üçün demo.</p>
+    <div class="group"><h3>Vəziyyət</h3><div class="row" id="states">
+      <button data-s="idle" class="on">Idle</button><button data-s="listening">Dinləyir</button>
+      <button data-s="thinking">Düşünür</button><button data-s="speaking">Danışır</button></div></div>
+    <div class="group"><h3>Emosiya</h3><div class="row" id="emos">
+      <button data-e="happy">Sevinc</button><button data-e="empathetic">Empatiya</button>
+      <button data-e="serious">Ciddi</button><button data-e="concerned">Narahat</button><button data-e="neutral">Neytral</button></div></div>
+    <div class="group"><h3>Lipsync</h3><div class="row">
+      <button id="play">▶ Nümunə səs</button><button id="mic">🎤 Mikrofon</button></div></div>
+    <div class="group"><h3>Chat rejimi (səssiz lipsync)</h3>
+      <textarea id="txt">[warm] Aysel xanım, 4 manat 50 qəpik balansınıza qaytarıldı. Növbəti səfərdən əvvəl rouminq paketini almağı tövsiyə edirəm.</textarea>
+      <div class="row" style="margin-top:8px"><button id="say">Danış</button></div></div>
+    <div class="note">Model: frontend/avatar/maryam.glb (2.3 MB, Meshopt). Səs nümunəsi: ElevenLabs v4 Turbo.</div>
+  </div>
+</div>
+<audio id="sample" src="./sample.mp3" crossorigin="anonymous"></audio>
+<script type="module">
+  import { MaryamAvatar } from "./maryam-avatar.js";
+  const maryam = new MaryamAvatar(document.getElementById("avatar"), { src: "./maryam.glb", framing: "bust" });
+  window.maryam = maryam;
+  await maryam.load();
+  const badge = document.getElementById("badge");
+  setInterval(() => { badge.innerHTML = `<i></i>Məryəm · ${maryam.state}${maryam.emotion.name !== "neutral" ? " · " + maryam.emotion.name : ""}`; }, 200);
+  const mark = (box, b) => { box.querySelectorAll("button").forEach(x => x.classList.toggle("on", x === b)); };
+  document.getElementById("states").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; maryam.setState(b.dataset.s); mark(e.currentTarget, b); };
+  document.getElementById("emos").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; maryam.setEmotion(b.dataset.e, { durationMs: 4000 }); };
+  const audio = document.getElementById("sample");
+  document.getElementById("play").onclick = () => { maryam.connectAudio(audio); audio.currentTime = 0; audio.play(); };
+  audio.onended = () => maryam.setState("idle");
+  document.getElementById("mic").onclick = async () => {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    maryam.connectAudio(stream);
+  };
+  if (location.hash === "#test-talk") { maryam.setEmotion("empathetic", { durationMs: 60000 }); maryam.speakText("Salam, Aysel xanım. Yoxladım: paket üçün on manat iki dəfə kəsilib, artıq balansınıza qaytardım."); }
+  if (location.hash === "#test-think") maryam.setState("thinking");
+  document.getElementById("say").onclick = () => { const t = document.getElementById("txt").value; maryam.reactToText(t); maryam.speakText(t); };
+</script>
+</body>
+</html>

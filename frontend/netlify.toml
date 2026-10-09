@@ -1,7 +1,4 @@
-# The frontend lives in frontend/. Netlify reads this root file, switches to the base
-# directory and uses the same build settings as frontend/netlify.toml.
 [build]
-  base = "frontend"
   command = "npm run build"
   publish = "dist"
 [[redirects]]

@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+data/kb_index.json
+eval/results/
+.pytest_cache/
+# avatar build intermediates (rebuild with assets/avatar/build_avatar.py)
+assets/avatar/*.png
+assets/avatar/*.webp
+assets/avatar/dec_*.glb
+assets/avatar/ayla_web.glb
+assets/avatar/ayla_tripo.glb

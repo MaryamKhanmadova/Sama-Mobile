@@ -1,0 +1,580 @@
+{
+  "msisdn": "+994981000685",
+  "currency": "AZN",
+  "months": [
+    {
+      "msisdn": "+994981000685",
+      "month": "2026-10",
+      "customer_id": "C00005",
+      "full_name": "Nigar Rzayeva",
+      "tariff_id": "T_GENC",
+      "tariff_name": "Səma Gənc",
+      "region": "Bakı-Xətai",
+      "currency": "AZN",
+      "is_current": true,
+      "days_elapsed": 9,
+      "days_in_month": 31,
+      "costs": {
+        "monthly_fee": 7.0,
+        "packages": 0.0,
+        "vas": 2.7,
+        "roaming": 0.0,
+        "out_of_bundle": 0.0,
+        "intl_calls": 0.0
+      },
+      "total": 9.7,
+      "credits": [],
+      "credits_total": 0.0,
+      "net_total": 9.7,
+      "forecast_total": 16.3,
+      "usage": {
+        "data_mb": 3950,
+        "data_limit_mb": 12288,
+        "data_pct": 32.1,
+        "voice_min": 43,
+        "voice_limit_min": 200,
+        "voice_pct": 21.5,
+        "sms": 13,
+        "sms_limit": 100
+      },
+      "data_by_category": {
+        "video": 1881,
+        "social": 702,
+        "browsing": 469,
+        "music": 266,
+        "games": 259,
+        "maps": 194,
+        "messaging": 176
+      },
+      "top_category": "video",
+      "daily_data_mb": [
+        545,
+        227,
+        603,
+        558,
+        433,
+        557,
+        427,
+        325,
+        271
+      ],
+      "peak_day": 3,
+      "packages": [],
+      "vas": [
+        {
+          "vas_id": "V_OYUN",
+          "name": "Oyun Klubu",
+          "amount": 2.7,
+          "period": "gün"
+        }
+      ],
+      "roaming": null,
+      "prev_month_total": 16.0,
+      "change_pct": 1.9,
+      "insights": [
+        "Oyun Klubu abunəliyi bu ay 2.70 AZN tutub. İstifadə etmirsinizsə, ləğv edə bilərsiniz."
+      ],
+      "potential_savings": 9.3
+    },
+    {
+      "msisdn": "+994981000685",
+      "month": "2026-09",
+      "customer_id": "C00005",
+      "full_name": "Nigar Rzayeva",
+      "tariff_id": "T_GENC",
+      "tariff_name": "Səma Gənc",
+      "region": "Bakı-Xətai",
+      "currency": "AZN",
+      "is_current": false,
+      "days_elapsed": 30,
+      "days_in_month": 30,
+      "costs": {
+        "monthly_fee": 7.0,
+        "packages": 0.0,
+        "vas": 9.0,
+        "roaming": 0.0,
+        "out_of_bundle": 0.0,
+        "intl_calls": 0.0
+      },
+      "total": 16.0,
+      "credits": [
+        {
+          "reason": "Oyun Klubu razılıq olmadan aktivləşdirildi — qaytarıldı",
+          "amount": 9.0
+        }
+      ],
+      "credits_total": 9.0,
+      "net_total": 7.0,
+      "forecast_total": 16.0,
+      "usage": {
+        "data_mb": 11072,
+        "data_limit_mb": 12288,
+        "data_pct": 90.1,
+        "voice_min": 100,
+        "voice_limit_min": 200,
+        "voice_pct": 50.0,
+        "sms": 11,
+        "sms_limit": 100
+      },
+      "data_by_category": {
+        "video": 4584,
+        "social": 2623,
+        "browsing": 1382,
+        "games": 741,
+        "messaging": 734,
+        "music": 664,
+        "maps": 341
+      },
+      "top_category": "video",
+      "daily_data_mb": [
+        203,
+        515,
+        478,
+        376,
+        223,
+        255,
+        461,
+        304,
+        519,
+        581,
+        220,
+        523,
+        551,
+        433,
+        427,
+        436,
+        403,
+        393,
+        263,
+        198,
+        222,
+        208,
+        271,
+        261,
+        559,
+        239,
+        440,
+        458,
+        276,
+        361
+      ],
+      "peak_day": 10,
+      "packages": [],
+      "vas": [
+        {
+          "vas_id": "V_OYUN",
+          "name": "Oyun Klubu",
+          "amount": 9.0,
+          "period": "gün"
+        }
+      ],
+      "roaming": null,
+      "prev_month_total": 19.3,
+      "change_pct": -17.1,
+      "insights": [
+        "Oyun Klubu abunəliyi bu ay 9.00 AZN tutub. İstifadə etmirsinizsə, ləğv edə bilərsiniz."
+      ],
+      "potential_savings": 9.0
+    },
+    {
+      "msisdn": "+994981000685",
+      "month": "2026-08",
+      "customer_id": "C00005",
+      "full_name": "Nigar Rzayeva",
+      "tariff_id": "T_GENC",
+      "tariff_name": "Səma Gənc",
+      "region": "Bakı-Xətai",
+      "currency": "AZN",
+      "is_current": false,
+      "days_elapsed": 31,
+      "days_in_month": 31,
+      "costs": {
+        "monthly_fee": 7.0,
+        "packages": 3.0,
+        "vas": 9.3,
+        "roaming": 0.0,
+        "out_of_bundle": 0.0,
+        "intl_calls": 0.0
+      },
+      "total": 19.3,
+      "credits": [
+        {
+          "reason": "Şəbəkə kəsintisinə görə kompensasiya",
+          "amount": 1.0
+        }
+      ],
+      "credits_total": 1.0,
+      "net_total": 18.3,
+      "forecast_total": 19.3,
+      "usage": {
+        "data_mb": 12911,
+        "data_limit_mb": 12288,
+        "data_pct": 105.1,
+        "voice_min": 174,
+        "voice_limit_min": 200,
+        "voice_pct": 87.0,
+        "sms": 21,
+        "sms_limit": 100
+      },
+      "data_by_category": {
+        "video": 5099,
+        "social": 2578,
+        "browsing": 2199,
+        "music": 1010,
+        "messaging": 901,
+        "games": 790,
+        "maps": 330
+      },
+      "top_category": "video",
+      "daily_data_mb": [
+        629,
+        476,
+        377,
+        547,
+        322,
+        628,
+        454,
+        362,
+        533,
+        397,
+        285,
+        524,
+        231,
+        556,
+        317,
+        480,
+        625,
+        457,
+        490,
+        342,
+        211,
+        225,
+        273,
+        470,
+        393,
+        427,
+        588,
+        266,
+        306,
+        486,
+        220
+      ],
+      "peak_day": 1,
+      "packages": [
+        {
+          "package_id": "P_NET5",
+          "name": "İnternet 5 GB / 7 gün",
+          "price": 3.0
+        }
+      ],
+      "vas": [
+        {
+          "vas_id": "V_OYUN",
+          "name": "Oyun Klubu",
+          "amount": 9.3,
+          "period": "gün"
+        }
+      ],
+      "roaming": null,
+      "prev_month_total": 16.3,
+      "change_pct": 18.4,
+      "insights": [
+        "Oyun Klubu abunəliyi bu ay 9.30 AZN tutub. İstifadə etmirsinizsə, ləğv edə bilərsiniz."
+      ],
+      "potential_savings": 9.3
+    },
+    {
+      "msisdn": "+994981000685",
+      "month": "2026-07",
+      "customer_id": "C00005",
+      "full_name": "Nigar Rzayeva",
+      "tariff_id": "T_GENC",
+      "tariff_name": "Səma Gənc",
+      "region": "Bakı-Xətai",
+      "currency": "AZN",
+      "is_current": false,
+      "days_elapsed": 31,
+      "days_in_month": 31,
+      "costs": {
+        "monthly_fee": 7.0,
+        "packages": 0.0,
+        "vas": 9.3,
+        "roaming": 0.0,
+        "out_of_bundle": 0.0,
+        "intl_calls": 0.0
+      },
+      "total": 16.3,
+      "credits": [],
+      "credits_total": 0.0,
+      "net_total": 16.3,
+      "forecast_total": 16.3,
+      "usage": {
+        "data_mb": 11259,
+        "data_limit_mb": 12288,
+        "data_pct": 91.6,
+        "voice_min": 62,
+        "voice_limit_min": 200,
+        "voice_pct": 31.0,
+        "sms": 51,
+        "sms_limit": 100
+      },
+      "data_by_category": {
+        "video": 4817,
+        "browsing": 1813,
+        "social": 1717,
+        "music": 1134,
+        "messaging": 846,
+        "games": 661,
+        "maps": 267
+      },
+      "top_category": "video",
+      "daily_data_mb": [
+        206,
+        406,
+        434,
+        222,
+        230,
+        505,
+        287,
+        478,
+        472,
+        432,
+        445,
+        262,
+        486,
+        404,
+        274,
+        300,
+        406,
+        512,
+        348,
+        274,
+        533,
+        357,
+        398,
+        406,
+        268,
+        318,
+        254,
+        329,
+        414,
+        283,
+        301
+      ],
+      "peak_day": 21,
+      "packages": [],
+      "vas": [
+        {
+          "vas_id": "V_OYUN",
+          "name": "Oyun Klubu",
+          "amount": 9.3,
+          "period": "gün"
+        }
+      ],
+      "roaming": null,
+      "prev_month_total": 16.0,
+      "change_pct": 1.9,
+      "insights": [
+        "Oyun Klubu abunəliyi bu ay 9.30 AZN tutub. İstifadə etmirsinizsə, ləğv edə bilərsiniz."
+      ],
+      "potential_savings": 9.3
+    },
+    {
+      "msisdn": "+994981000685",
+      "month": "2026-06",
+      "customer_id": "C00005",
+      "full_name": "Nigar Rzayeva",
+      "tariff_id": "T_GENC",
+      "tariff_name": "Səma Gənc",
+      "region": "Bakı-Xətai",
+      "currency": "AZN",
+      "is_current": false,
+      "days_elapsed": 30,
+      "days_in_month": 30,
+      "costs": {
+        "monthly_fee": 7.0,
+        "packages": 0.0,
+        "vas": 9.0,
+        "roaming": 0.0,
+        "out_of_bundle": 0.0,
+        "intl_calls": 0.0
+      },
+      "total": 16.0,
+      "credits": [],
+      "credits_total": 0.0,
+      "net_total": 16.0,
+      "forecast_total": 16.0,
+      "usage": {
+        "data_mb": 11958,
+        "data_limit_mb": 12288,
+        "data_pct": 97.3,
+        "voice_min": 77,
+        "voice_limit_min": 200,
+        "voice_pct": 38.5,
+        "sms": 30,
+        "sms_limit": 100
+      },
+      "data_by_category": {
+        "video": 3757,
+        "social": 2903,
+        "music": 1501,
+        "browsing": 1373,
+        "messaging": 1195,
+        "maps": 712,
+        "games": 514
+      },
+      "top_category": "video",
+      "daily_data_mb": [
+        521,
+        455,
+        453,
+        320,
+        345,
+        371,
+        524,
+        496,
+        446,
+        314,
+        291,
+        345,
+        337,
+        390,
+        263,
+        195,
+        577,
+        375,
+        368,
+        434,
+        512,
+        519,
+        509,
+        349,
+        220,
+        333,
+        336,
+        506,
+        390,
+        449
+      ],
+      "peak_day": 17,
+      "packages": [],
+      "vas": [
+        {
+          "vas_id": "V_OYUN",
+          "name": "Oyun Klubu",
+          "amount": 9.0,
+          "period": "gün"
+        }
+      ],
+      "roaming": null,
+      "prev_month_total": 19.3,
+      "change_pct": -17.1,
+      "insights": [
+        "Oyun Klubu abunəliyi bu ay 9.00 AZN tutub. İstifadə etmirsinizsə, ləğv edə bilərsiniz."
+      ],
+      "potential_savings": 9.0
+    },
+    {
+      "msisdn": "+994981000685",
+      "month": "2026-05",
+      "customer_id": "C00005",
+      "full_name": "Nigar Rzayeva",
+      "tariff_id": "T_GENC",
+      "tariff_name": "Səma Gənc",
+      "region": "Bakı-Xətai",
+      "currency": "AZN",
+      "is_current": false,
+      "days_elapsed": 31,
+      "days_in_month": 31,
+      "costs": {
+        "monthly_fee": 7.0,
+        "packages": 3.0,
+        "vas": 9.3,
+        "roaming": 0.0,
+        "out_of_bundle": 0.0,
+        "intl_calls": 0.0
+      },
+      "total": 19.3,
+      "credits": [],
+      "credits_total": 0.0,
+      "net_total": 19.3,
+      "forecast_total": 19.3,
+      "usage": {
+        "data_mb": 15689,
+        "data_limit_mb": 12288,
+        "data_pct": 127.7,
+        "voice_min": 113,
+        "voice_limit_min": 200,
+        "voice_pct": 56.5,
+        "sms": 15,
+        "sms_limit": 100
+      },
+      "data_by_category": {
+        "video": 6915,
+        "social": 3215,
+        "browsing": 2649,
+        "music": 1122,
+        "messaging": 740,
+        "maps": 603,
+        "games": 443
+      },
+      "top_category": "video",
+      "daily_data_mb": [
+        549,
+        679,
+        283,
+        540,
+        419,
+        483,
+        311,
+        377,
+        491,
+        686,
+        293,
+        477,
+        628,
+        706,
+        335,
+        301,
+        695,
+        710,
+        473,
+        266,
+        686,
+        427,
+        676,
+        539,
+        637,
+        318,
+        619,
+        347,
+        435,
+        648,
+        640
+      ],
+      "peak_day": 18,
+      "packages": [
+        {
+          "package_id": "P_NET5",
+          "name": "İnternet 5 GB / 7 gün",
+          "price": 3.0
+        }
+      ],
+      "vas": [
+        {
+          "vas_id": "V_OYUN",
+          "name": "Oyun Klubu",
+          "amount": 9.3,
+          "period": "gün"
+        }
+      ],
+      "roaming": null,
+      "prev_month_total": null,
+      "change_pct": null,
+      "insights": [
+        "Oyun Klubu abunəliyi bu ay 9.30 AZN tutub. İstifadə etmirsinizsə, ləğv edə bilərsiniz."
+      ],
+      "potential_savings": 9.3
+    }
+  ]
+}

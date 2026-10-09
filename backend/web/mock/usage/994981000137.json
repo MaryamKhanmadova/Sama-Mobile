@@ -1,0 +1,585 @@
+{
+  "msisdn": "+994981000137",
+  "currency": "AZN",
+  "months": [
+    {
+      "msisdn": "+994981000137",
+      "month": "2026-10",
+      "customer_id": "C00001",
+      "full_name": "Aysel Məmmədova",
+      "tariff_id": "T_PLUS",
+      "tariff_name": "Səma Plus",
+      "region": "Bakı-Nəsimi",
+      "currency": "AZN",
+      "is_current": true,
+      "days_elapsed": 9,
+      "days_in_month": 31,
+      "costs": {
+        "monthly_fee": 15.0,
+        "packages": 0.0,
+        "vas": 1.8,
+        "roaming": 0.0,
+        "out_of_bundle": 0.0,
+        "intl_calls": 0.0
+      },
+      "total": 16.8,
+      "credits": [],
+      "credits_total": 0.0,
+      "net_total": 16.8,
+      "forecast_total": 21.2,
+      "usage": {
+        "data_mb": 7058,
+        "data_limit_mb": 25600,
+        "data_pct": 27.6,
+        "voice_min": 204,
+        "voice_limit_min": 800,
+        "voice_pct": 25.5,
+        "sms": 14,
+        "sms_limit": 300
+      },
+      "data_by_category": {
+        "video": 2380,
+        "social": 2215,
+        "browsing": 1123,
+        "music": 400,
+        "maps": 360,
+        "messaging": 333,
+        "games": 245
+      },
+      "top_category": "video",
+      "daily_data_mb": [
+        1029,
+        508,
+        1044,
+        1165,
+        911,
+        669,
+        825,
+        496,
+        405
+      ],
+      "peak_day": 4,
+      "packages": [],
+      "vas": [
+        {
+          "vas_id": "V_FAL",
+          "name": "Ulduz Falı",
+          "amount": 1.8,
+          "period": "gün"
+        }
+      ],
+      "roaming": null,
+      "prev_month_total": 24.0,
+      "change_pct": -11.7,
+      "insights": [
+        "Ulduz Falı abunəliyi bu ay 1.80 AZN tutub. İstifadə etmirsinizsə, ləğv edə bilərsiniz."
+      ],
+      "potential_savings": 6.2
+    },
+    {
+      "msisdn": "+994981000137",
+      "month": "2026-09",
+      "customer_id": "C00001",
+      "full_name": "Aysel Məmmədova",
+      "tariff_id": "T_PLUS",
+      "tariff_name": "Səma Plus",
+      "region": "Bakı-Nəsimi",
+      "currency": "AZN",
+      "is_current": false,
+      "days_elapsed": 30,
+      "days_in_month": 30,
+      "costs": {
+        "monthly_fee": 15.0,
+        "packages": 3.0,
+        "vas": 6.0,
+        "roaming": 0.0,
+        "out_of_bundle": 0.0,
+        "intl_calls": 0.0
+      },
+      "total": 24.0,
+      "credits": [
+        {
+          "reason": "Ulduz Falı razılıq olmadan aktivləşdirildi — qaytarıldı",
+          "amount": 6.0
+        }
+      ],
+      "credits_total": 6.0,
+      "net_total": 18.0,
+      "forecast_total": 24.0,
+      "usage": {
+        "data_mb": 25620,
+        "data_limit_mb": 25600,
+        "data_pct": 100.1,
+        "voice_min": 592,
+        "voice_limit_min": 800,
+        "voice_pct": 74.0,
+        "sms": 44,
+        "sms_limit": 300
+      },
+      "data_by_category": {
+        "video": 10615,
+        "social": 6193,
+        "browsing": 3507,
+        "music": 2020,
+        "messaging": 1679,
+        "maps": 816,
+        "games": 786
+      },
+      "top_category": "video",
+      "daily_data_mb": [
+        705,
+        436,
+        435,
+        642,
+        625,
+        983,
+        1201,
+        781,
+        1184,
+        1226,
+        1199,
+        712,
+        594,
+        599,
+        574,
+        580,
+        926,
+        1154,
+        1105,
+        807,
+        950,
+        1071,
+        482,
+        956,
+        1162,
+        1057,
+        1030,
+        806,
+        559,
+        1062
+      ],
+      "peak_day": 10,
+      "packages": [
+        {
+          "package_id": "P_NET5",
+          "name": "İnternet 5 GB / 7 gün",
+          "price": 3.0
+        }
+      ],
+      "vas": [
+        {
+          "vas_id": "V_FAL",
+          "name": "Ulduz Falı",
+          "amount": 6.0,
+          "period": "gün"
+        }
+      ],
+      "roaming": null,
+      "prev_month_total": 21.2,
+      "change_pct": 13.2,
+      "insights": [
+        "Ulduz Falı abunəliyi bu ay 6.00 AZN tutub. İstifadə etmirsinizsə, ləğv edə bilərsiniz."
+      ],
+      "potential_savings": 6.0
+    },
+    {
+      "msisdn": "+994981000137",
+      "month": "2026-08",
+      "customer_id": "C00001",
+      "full_name": "Aysel Məmmədova",
+      "tariff_id": "T_PLUS",
+      "tariff_name": "Səma Plus",
+      "region": "Bakı-Nəsimi",
+      "currency": "AZN",
+      "is_current": false,
+      "days_elapsed": 31,
+      "days_in_month": 31,
+      "costs": {
+        "monthly_fee": 15.0,
+        "packages": 0.0,
+        "vas": 6.2,
+        "roaming": 0.0,
+        "out_of_bundle": 0.0,
+        "intl_calls": 0.0
+      },
+      "total": 21.2,
+      "credits": [
+        {
+          "reason": "Şəbəkə kəsintisinə görə kompensasiya",
+          "amount": 1.0
+        }
+      ],
+      "credits_total": 1.0,
+      "net_total": 20.2,
+      "forecast_total": 21.2,
+      "usage": {
+        "data_mb": 22277,
+        "data_limit_mb": 25600,
+        "data_pct": 87.0,
+        "voice_min": 301,
+        "voice_limit_min": 800,
+        "voice_pct": 37.6,
+        "sms": 15,
+        "sms_limit": 300
+      },
+      "data_by_category": {
+        "video": 6381,
+        "social": 6225,
+        "browsing": 3548,
+        "music": 2677,
+        "messaging": 1880,
+        "games": 808,
+        "maps": 754
+      },
+      "top_category": "video",
+      "daily_data_mb": [
+        599,
+        776,
+        996,
+        754,
+        666,
+        421,
+        676,
+        1011,
+        671,
+        555,
+        440,
+        855,
+        849,
+        669,
+        816,
+        695,
+        482,
+        993,
+        589,
+        814,
+        968,
+        861,
+        546,
+        782,
+        404,
+        921,
+        697,
+        964,
+        585,
+        494,
+        713
+      ],
+      "peak_day": 8,
+      "packages": [],
+      "vas": [
+        {
+          "vas_id": "V_FAL",
+          "name": "Ulduz Falı",
+          "amount": 6.2,
+          "period": "gün"
+        }
+      ],
+      "roaming": null,
+      "prev_month_total": 21.2,
+      "change_pct": 0.0,
+      "insights": [
+        "Ulduz Falı abunəliyi bu ay 6.20 AZN tutub. İstifadə etmirsinizsə, ləğv edə bilərsiniz."
+      ],
+      "potential_savings": 6.2
+    },
+    {
+      "msisdn": "+994981000137",
+      "month": "2026-07",
+      "customer_id": "C00001",
+      "full_name": "Aysel Məmmədova",
+      "tariff_id": "T_PLUS",
+      "tariff_name": "Səma Plus",
+      "region": "Bakı-Nəsimi",
+      "currency": "AZN",
+      "is_current": false,
+      "days_elapsed": 31,
+      "days_in_month": 31,
+      "costs": {
+        "monthly_fee": 15.0,
+        "packages": 0.0,
+        "vas": 6.2,
+        "roaming": 0.0,
+        "out_of_bundle": 0.0,
+        "intl_calls": 0.0
+      },
+      "total": 21.2,
+      "credits": [],
+      "credits_total": 0.0,
+      "net_total": 21.2,
+      "forecast_total": 21.2,
+      "usage": {
+        "data_mb": 23967,
+        "data_limit_mb": 25600,
+        "data_pct": 93.6,
+        "voice_min": 662,
+        "voice_limit_min": 800,
+        "voice_pct": 82.8,
+        "sms": 30,
+        "sms_limit": 300
+      },
+      "data_by_category": {
+        "video": 10981,
+        "social": 3552,
+        "browsing": 2992,
+        "messaging": 2037,
+        "music": 1852,
+        "games": 1398,
+        "maps": 1150
+      },
+      "top_category": "video",
+      "daily_data_mb": [
+        615,
+        723,
+        678,
+        1093,
+        1151,
+        514,
+        534,
+        578,
+        579,
+        778,
+        860,
+        602,
+        398,
+        726,
+        686,
+        842,
+        1148,
+        940,
+        802,
+        883,
+        929,
+        437,
+        1105,
+        1011,
+        1086,
+        1025,
+        705,
+        710,
+        476,
+        896,
+        444
+      ],
+      "peak_day": 5,
+      "packages": [],
+      "vas": [
+        {
+          "vas_id": "V_FAL",
+          "name": "Ulduz Falı",
+          "amount": 6.2,
+          "period": "gün"
+        }
+      ],
+      "roaming": null,
+      "prev_month_total": 24.0,
+      "change_pct": -11.7,
+      "insights": [
+        "Ulduz Falı abunəliyi bu ay 6.20 AZN tutub. İstifadə etmirsinizsə, ləğv edə bilərsiniz."
+      ],
+      "potential_savings": 6.2
+    },
+    {
+      "msisdn": "+994981000137",
+      "month": "2026-06",
+      "customer_id": "C00001",
+      "full_name": "Aysel Məmmədova",
+      "tariff_id": "T_PLUS",
+      "tariff_name": "Səma Plus",
+      "region": "Bakı-Nəsimi",
+      "currency": "AZN",
+      "is_current": false,
+      "days_elapsed": 30,
+      "days_in_month": 30,
+      "costs": {
+        "monthly_fee": 15.0,
+        "packages": 3.0,
+        "vas": 6.0,
+        "roaming": 0.0,
+        "out_of_bundle": 0.0,
+        "intl_calls": 0.0
+      },
+      "total": 24.0,
+      "credits": [],
+      "credits_total": 0.0,
+      "net_total": 24.0,
+      "forecast_total": 24.0,
+      "usage": {
+        "data_mb": 27128,
+        "data_limit_mb": 25600,
+        "data_pct": 106.0,
+        "voice_min": 325,
+        "voice_limit_min": 800,
+        "voice_pct": 40.6,
+        "sms": 41,
+        "sms_limit": 300
+      },
+      "data_by_category": {
+        "video": 10975,
+        "social": 6087,
+        "browsing": 3893,
+        "music": 2521,
+        "games": 1463,
+        "messaging": 1336,
+        "maps": 848
+      },
+      "top_category": "video",
+      "daily_data_mb": [
+        751,
+        1279,
+        822,
+        1304,
+        515,
+        944,
+        1150,
+        1176,
+        749,
+        758,
+        889,
+        1157,
+        507,
+        529,
+        687,
+        1068,
+        504,
+        1098,
+        722,
+        962,
+        1054,
+        843,
+        1085,
+        1237,
+        755,
+        1285,
+        763,
+        991,
+        886,
+        640
+      ],
+      "peak_day": 4,
+      "packages": [
+        {
+          "package_id": "P_NET5",
+          "name": "İnternet 5 GB / 7 gün",
+          "price": 3.0
+        }
+      ],
+      "vas": [
+        {
+          "vas_id": "V_FAL",
+          "name": "Ulduz Falı",
+          "amount": 6.0,
+          "period": "gün"
+        }
+      ],
+      "roaming": null,
+      "prev_month_total": 21.2,
+      "change_pct": 13.2,
+      "insights": [
+        "Ulduz Falı abunəliyi bu ay 6.00 AZN tutub. İstifadə etmirsinizsə, ləğv edə bilərsiniz."
+      ],
+      "potential_savings": 6.0
+    },
+    {
+      "msisdn": "+994981000137",
+      "month": "2026-05",
+      "customer_id": "C00001",
+      "full_name": "Aysel Məmmədova",
+      "tariff_id": "T_PLUS",
+      "tariff_name": "Səma Plus",
+      "region": "Bakı-Nəsimi",
+      "currency": "AZN",
+      "is_current": false,
+      "days_elapsed": 31,
+      "days_in_month": 31,
+      "costs": {
+        "monthly_fee": 15.0,
+        "packages": 0.0,
+        "vas": 6.2,
+        "roaming": 0.0,
+        "out_of_bundle": 0.0,
+        "intl_calls": 0.0
+      },
+      "total": 21.2,
+      "credits": [
+        {
+          "reason": "Şəbəkə kəsintisinə görə kompensasiya",
+          "amount": 1.0
+        }
+      ],
+      "credits_total": 1.0,
+      "net_total": 20.2,
+      "forecast_total": 21.2,
+      "usage": {
+        "data_mb": 24247,
+        "data_limit_mb": 25600,
+        "data_pct": 94.7,
+        "voice_min": 262,
+        "voice_limit_min": 800,
+        "voice_pct": 32.8,
+        "sms": 46,
+        "sms_limit": 300
+      },
+      "data_by_category": {
+        "video": 10133,
+        "social": 4635,
+        "browsing": 4207,
+        "messaging": 1980,
+        "music": 1505,
+        "games": 979,
+        "maps": 803
+      },
+      "top_category": "video",
+      "daily_data_mb": [
+        762,
+        1093,
+        514,
+        596,
+        929,
+        1193,
+        888,
+        739,
+        1217,
+        450,
+        1119,
+        650,
+        531,
+        509,
+        666,
+        1085,
+        561,
+        891,
+        938,
+        719,
+        863,
+        463,
+        461,
+        582,
+        973,
+        764,
+        671,
+        894,
+        785,
+        659,
+        1067
+      ],
+      "peak_day": 9,
+      "packages": [],
+      "vas": [
+        {
+          "vas_id": "V_FAL",
+          "name": "Ulduz Falı",
+          "amount": 6.2,
+          "period": "gün"
+        }
+      ],
+      "roaming": null,
+      "prev_month_total": null,
+      "change_pct": null,
+      "insights": [
+        "Ulduz Falı abunəliyi bu ay 6.20 AZN tutub. İstifadə etmirsinizsə, ləğv edə bilərsiniz."
+      ],
+      "potential_savings": 6.2
+    }
+  ]
+}

@@ -1,0 +1,3062 @@
+[
+ {
+  "msisdn": "+994981000137",
+  "customer_id": "C00001",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 12.5,
+  "segment": "prepaid",
+  "region": "Şamaxı",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "3657",
+   "pin_status": "ok",
+   "puk": "28728463"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981000274",
+  "customer_id": "C00002",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 14.5,
+  "segment": "prepaid",
+  "region": "Bakı-Nərimanov",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "8004",
+   "pin_status": "ok",
+   "puk": "43704923"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981000411",
+  "customer_id": "C00003",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 13.6,
+  "segment": "prepaid",
+  "region": "Mingəçevir",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "0207",
+   "pin_status": "ok",
+   "puk": "66379329"
+  },
+  "active_vas": [
+   "V_FAL"
+  ],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981000548",
+  "customer_id": "C00004",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 9.5,
+  "segment": "prepaid",
+  "region": "Mingəçevir",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "2529",
+   "pin_status": "ok",
+   "puk": "20043277"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981000685",
+  "customer_id": "C00005",
+  "tariff_id": "T_PAYG",
+  "status": "active",
+  "balance": 12.35,
+  "segment": "prepaid",
+  "region": "Lənkəran",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "6132",
+   "pin_status": "ok",
+   "puk": "30486849"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981000822",
+  "customer_id": "C00006",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 12.5,
+  "segment": "prepaid",
+  "region": "Bakı-Nəsimi",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "9201",
+   "pin_status": "ok",
+   "puk": "85387867"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981000959",
+  "customer_id": "C00007",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 15.4,
+  "segment": "prepaid",
+  "region": "Gəncə",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "3862",
+   "pin_status": "ok",
+   "puk": "61830338"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981001096",
+  "customer_id": "C00008",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 34.0,
+  "segment": "prepaid",
+  "region": "Bakı-Nəsimi",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "2616",
+   "pin_status": "ok",
+   "puk": "53947691"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981001233",
+  "customer_id": "C00009",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 0.4,
+  "segment": "prepaid",
+  "region": "Mingəçevir",
+  "language": "ru",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "5049",
+   "pin_status": "ok",
+   "puk": "12921981"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 19,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981001370",
+  "customer_id": "C00010",
+  "tariff_id": "T_MAX",
+  "status": "active",
+  "balance": 17.5,
+  "segment": "prepaid",
+  "region": "Bakı-Nərimanov",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "5188",
+   "pin_status": "ok",
+   "puk": "58412365"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981001507",
+  "customer_id": "C00011",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 14.4,
+  "segment": "prepaid",
+  "region": "Qəbələ",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": false,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "4543",
+   "pin_status": "ok",
+   "puk": "98032908"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981001644",
+  "customer_id": "C00012",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 6.9,
+  "segment": "prepaid",
+  "region": "Mingəçevir",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "1020",
+   "pin_status": "ok",
+   "puk": "68382413"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981001781",
+  "customer_id": "C00013",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 28.6,
+  "segment": "prepaid",
+  "region": "Bakı-Nəsimi",
+  "language": "az",
+  "activated_at": "2025-02-16T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "3056",
+   "pin_status": "ok",
+   "puk": "69830944"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981001918",
+  "customer_id": "C00014",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 2.3,
+  "segment": "prepaid",
+  "region": "Lənkəran",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "8745",
+   "pin_status": "ok",
+   "puk": "36764927"
+  },
+  "active_vas": [
+   "V_OYUN"
+  ],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981002055",
+  "customer_id": "C00015",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 17.65,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "az",
+  "activated_at": "2026-02-11T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "2913",
+   "pin_status": "ok",
+   "puk": "77631432"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 29,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981002192",
+  "customer_id": "C00016",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 11.2,
+  "segment": "prepaid",
+  "region": "Şamaxı",
+  "language": "az",
+  "activated_at": "2023-06-27T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "9533",
+   "pin_status": "ok",
+   "puk": "87698748"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 29,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981002329",
+  "customer_id": "C00017",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 17.6,
+  "segment": "prepaid",
+  "region": "Lənkəran",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "1744",
+   "pin_status": "ok",
+   "puk": "84978145"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 25,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981002466",
+  "customer_id": "C00018",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 4.2,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": true,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "7801",
+   "pin_status": "ok",
+   "puk": "72705646"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981002603",
+  "customer_id": "C00019",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 17.5,
+  "segment": "prepaid",
+  "region": "Mingəçevir",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "7515",
+   "pin_status": "ok",
+   "puk": "99287317"
+  },
+  "active_vas": [
+   "V_MELODIYA"
+  ],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981002740",
+  "customer_id": "C00020",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 31.0,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "az",
+  "activated_at": "2024-04-22T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "8027",
+   "pin_status": "ok",
+   "puk": "53606752"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981002877",
+  "customer_id": "C00021",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 10.8,
+  "segment": "prepaid",
+  "region": "Bakı-Nərimanov",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "4467",
+   "pin_status": "ok",
+   "puk": "30041488"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981003014",
+  "customer_id": "C00022",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 11.2,
+  "segment": "prepaid",
+  "region": "Lənkəran",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "7122",
+   "pin_status": "ok",
+   "puk": "11592230"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 9,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981003151",
+  "customer_id": "C00023",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 1.4,
+  "segment": "prepaid",
+  "region": "Şamaxı",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "2084",
+   "pin_status": "ok",
+   "puk": "14307663"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981003288",
+  "customer_id": "C00024",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 12.4,
+  "segment": "prepaid",
+  "region": "Bakı-Nəsimi",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "7571",
+   "pin_status": "ok",
+   "puk": "86224438"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981003425",
+  "customer_id": "C00025",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 13.6,
+  "segment": "prepaid",
+  "region": "Qəbələ",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "0739",
+   "pin_status": "ok",
+   "puk": "27206452"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 1,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981003562",
+  "customer_id": "C00026",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 16.0,
+  "segment": "prepaid",
+  "region": "Qəbələ",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "5140",
+   "pin_status": "ok",
+   "puk": "87283822"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981003699",
+  "customer_id": "C00027",
+  "tariff_id": "T_BIZNES",
+  "status": "active",
+  "balance": 2.5,
+  "segment": "postpaid",
+  "region": "Qəbələ",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "4958",
+   "pin_status": "ok",
+   "puk": "21762188"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": {
+   "due_date": "2026-10-30T23:59:00+04:00",
+   "amount_due": 2.0,
+   "overdue_days": 0
+  }
+ },
+ {
+  "msisdn": "+994981003836",
+  "customer_id": "C00028",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 7.5,
+  "segment": "prepaid",
+  "region": "Şamaxı",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": false,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "9573",
+   "pin_status": "ok",
+   "puk": "76951467"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981003973",
+  "customer_id": "C00029",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 12.5,
+  "segment": "prepaid",
+  "region": "Şamaxı",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 13",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "5292",
+   "pin_status": "ok",
+   "puk": "68055632"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981004110",
+  "customer_id": "C00030",
+  "tariff_id": "T_PAYG",
+  "status": "active",
+  "balance": 0.0,
+  "segment": "prepaid",
+  "region": "Bakı-Nərimanov",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "8898",
+   "pin_status": "ok",
+   "puk": "45049006"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981004247",
+  "customer_id": "C00031",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 0.4,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "9798",
+   "pin_status": "pin_locked",
+   "puk": "69555922"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981004384",
+  "customer_id": "C00032",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 11.2,
+  "segment": "prepaid",
+  "region": "Şamaxı",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Tecno Spark 10",
+   "os": "Android 13",
+   "supports_volte": false,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "1481",
+   "pin_status": "ok",
+   "puk": "54667809"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981004521",
+  "customer_id": "C00033",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 6.2,
+  "segment": "prepaid",
+  "region": "Sumqayıt",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "7678",
+   "pin_status": "ok",
+   "puk": "77408068"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981004658",
+  "customer_id": "C00034",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 14.0,
+  "segment": "prepaid",
+  "region": "Mingəçevir",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "esim",
+   "iccid_last4": "9914",
+   "pin_status": "ok",
+   "puk": "59541127"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981004795",
+  "customer_id": "C00035",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 24.0,
+  "segment": "prepaid",
+  "region": "Mingəçevir",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "1290",
+   "pin_status": "ok",
+   "puk": "94013952"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981004932",
+  "customer_id": "C00036",
+  "tariff_id": "T_BIZNES",
+  "status": "suspended",
+  "balance": 4.0,
+  "segment": "postpaid",
+  "region": "Qəbələ",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "1527",
+   "pin_status": "ok",
+   "puk": "22517871"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": {
+   "due_date": "2026-09-21T23:59:00+04:00",
+   "amount_due": 32.0,
+   "overdue_days": 18
+  }
+ },
+ {
+  "msisdn": "+994981005069",
+  "customer_id": "C00037",
+  "tariff_id": "T_MAX",
+  "status": "active",
+  "balance": 7.5,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "9457",
+   "pin_status": "ok",
+   "puk": "97024488"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 25,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981005206",
+  "customer_id": "C00038",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 10.4,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "4075",
+   "pin_status": "ok",
+   "puk": "95502685"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981005343",
+  "customer_id": "C00039",
+  "tariff_id": "T_PLUS",
+  "status": "port_in_pending",
+  "balance": 4.0,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "az",
+  "activated_at": "2026-10-09T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "0579",
+   "pin_status": "ok",
+   "puk": "56418606"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981005480",
+  "customer_id": "C00040",
+  "tariff_id": "T_BIZNES",
+  "status": "active",
+  "balance": 4.0,
+  "segment": "corporate",
+  "region": "Bakı-Yasamal",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "8316",
+   "pin_status": "ok",
+   "puk": "40231877"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": {
+   "due_date": "2026-10-29T23:59:00+04:00",
+   "amount_due": 0.0,
+   "overdue_days": 0
+  }
+ },
+ {
+  "msisdn": "+994981005617",
+  "customer_id": "C00041",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 19.0,
+  "segment": "prepaid",
+  "region": "Quba",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "5935",
+   "pin_status": "ok",
+   "puk": "97688458"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981005754",
+  "customer_id": "C00042",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 10.4,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "6805",
+   "pin_status": "ok",
+   "puk": "12705048"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981005891",
+  "customer_id": "C00043",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 10.4,
+  "segment": "prepaid",
+  "region": "Bakı-Nəsimi",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "2416",
+   "pin_status": "ok",
+   "puk": "45787268"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981006028",
+  "customer_id": "C00044",
+  "tariff_id": "T_BIZNES",
+  "status": "active",
+  "balance": 1.2,
+  "segment": "postpaid",
+  "region": "Lənkəran",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "6565",
+   "pin_status": "ok",
+   "puk": "13004259"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": {
+   "due_date": "2026-10-29T23:59:00+04:00",
+   "amount_due": 0.0,
+   "overdue_days": 0
+  }
+ },
+ {
+  "msisdn": "+994981006165",
+  "customer_id": "C00045",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 10.2,
+  "segment": "prepaid",
+  "region": "Bakı-Nərimanov",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "1959",
+   "pin_status": "ok",
+   "puk": "97241075"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981006302",
+  "customer_id": "C00046",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 9.0,
+  "segment": "prepaid",
+  "region": "Bakı-Nərimanov",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "0646",
+   "pin_status": "ok",
+   "puk": "27089076"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981006439",
+  "customer_id": "C00047",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 6.2,
+  "segment": "prepaid",
+  "region": "Qəbələ",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "9884",
+   "pin_status": "ok",
+   "puk": "90402724"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981006576",
+  "customer_id": "C00048",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 11.2,
+  "segment": "prepaid",
+  "region": "Bakı-Nəsimi",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "0453",
+   "pin_status": "ok",
+   "puk": "86246226"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981006713",
+  "customer_id": "C00049",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 11.2,
+  "segment": "prepaid",
+  "region": "Şamaxı",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "8981",
+   "pin_status": "ok",
+   "puk": "64788762"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981006850",
+  "customer_id": "C00050",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 0.2,
+  "segment": "prepaid",
+  "region": "Lənkəran",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "9714",
+   "pin_status": "ok",
+   "puk": "34683931"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 23,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981006987",
+  "customer_id": "C00051",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 7.4,
+  "segment": "prepaid",
+  "region": "Mingəçevir",
+  "language": "ru",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "6484",
+   "pin_status": "ok",
+   "puk": "12584460"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981007124",
+  "customer_id": "C00052",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 20.0,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "ru",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "6223",
+   "pin_status": "ok",
+   "puk": "55282739"
+  },
+  "active_vas": [
+   "V_XEBER"
+  ],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981007261",
+  "customer_id": "C00053",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 0.4,
+  "segment": "prepaid",
+  "region": "Qəbələ",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "1493",
+   "pin_status": "ok",
+   "puk": "86670571"
+  },
+  "active_vas": [
+   "V_FAL"
+  ],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981007398",
+  "customer_id": "C00054",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 17.5,
+  "segment": "prepaid",
+  "region": "Bakı-Nəsimi",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "3589",
+   "pin_status": "ok",
+   "puk": "72855049"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981007535",
+  "customer_id": "C00055",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 14.4,
+  "segment": "prepaid",
+  "region": "Şamaxı",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "2685",
+   "pin_status": "ok",
+   "puk": "58510263"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981007672",
+  "customer_id": "C00056",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 9.2,
+  "segment": "prepaid",
+  "region": "Bakı-Nərimanov",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "1619",
+   "pin_status": "ok",
+   "puk": "46482003"
+  },
+  "active_vas": [
+   "V_QORUMA"
+  ],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981007809",
+  "customer_id": "C00057",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 15.4,
+  "segment": "prepaid",
+  "region": "Qəbələ",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "0868",
+   "pin_status": "ok",
+   "puk": "64590632"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981007946",
+  "customer_id": "C00058",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 15.4,
+  "segment": "prepaid",
+  "region": "Qəbələ",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "7423",
+   "pin_status": "ok",
+   "puk": "44258271"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981008083",
+  "customer_id": "C00059",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 12.5,
+  "segment": "prepaid",
+  "region": "Lənkəran",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "6636",
+   "pin_status": "ok",
+   "puk": "79562011"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981008220",
+  "customer_id": "C00060",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 10.4,
+  "segment": "prepaid",
+  "region": "Şamaxı",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "6913",
+   "pin_status": "ok",
+   "puk": "58816297"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981008357",
+  "customer_id": "C00061",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 0.15,
+  "segment": "prepaid",
+  "region": "Lənkəran",
+  "language": "az",
+  "activated_at": "2025-08-15T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "4074",
+   "pin_status": "ok",
+   "puk": "36568577"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981008494",
+  "customer_id": "C00062",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 11.2,
+  "segment": "prepaid",
+  "region": "Şamaxı",
+  "language": "az",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "1371",
+   "pin_status": "ok",
+   "puk": "41569450"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981008631",
+  "customer_id": "C00063",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 6.2,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "ru",
+  "activated_at": "2024-10-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "6965",
+   "pin_status": "ok",
+   "puk": "27563172"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 27,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981008768",
+  "customer_id": "C00064",
+  "tariff_id": "T_PAYG",
+  "status": "active",
+  "balance": 2.5,
+  "segment": "prepaid",
+  "region": "Bakı-Xətai",
+  "language": "ru",
+  "activated_at": "2021-03-09T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "6899",
+   "pin_status": "ok",
+   "puk": "83864238"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 14,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981008905",
+  "customer_id": "C00065",
+  "tariff_id": "T_MAX",
+  "status": "active",
+  "balance": 1.2,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "ru",
+  "activated_at": "2026-01-12T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "7279",
+   "pin_status": "ok",
+   "puk": "47138074"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 28,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981009042",
+  "customer_id": "C00066",
+  "tariff_id": "T_MAX",
+  "status": "active",
+  "balance": 21.1,
+  "segment": "prepaid",
+  "region": "Quba",
+  "language": "ru",
+  "activated_at": "2017-07-28T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "9972",
+   "pin_status": "ok",
+   "puk": "30746464"
+  },
+  "active_vas": [
+   "V_XEBER"
+  ],
+  "renewal_day_of_month": 2,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981009179",
+  "customer_id": "C00067",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 12.5,
+  "segment": "prepaid",
+  "region": "Şamaxı",
+  "language": "az",
+  "activated_at": "2018-10-21T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "0796",
+   "pin_status": "ok",
+   "puk": "25089913"
+  },
+  "active_vas": [
+   "V_MELODIYA"
+  ],
+  "renewal_day_of_month": 3,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981009316",
+  "customer_id": "C00068",
+  "tariff_id": "T_BIZNES",
+  "status": "active",
+  "balance": 1.2,
+  "segment": "postpaid",
+  "region": "Şəki",
+  "language": "az",
+  "activated_at": "2023-07-27T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": false,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Nokia 105",
+   "os": "Series 30+",
+   "supports_volte": false,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "0818",
+   "pin_status": "ok",
+   "puk": "10159801"
+  },
+  "active_vas": [
+   "V_FAL"
+  ],
+  "renewal_day_of_month": 20,
+  "postpaid": {
+   "due_date": "2026-10-29T23:59:00+04:00",
+   "amount_due": 0.0,
+   "overdue_days": 0
+  }
+ },
+ {
+  "msisdn": "+994981009453",
+  "customer_id": "C00069",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 15.4,
+  "segment": "prepaid",
+  "region": "Bakı-Nərimanov",
+  "language": "az",
+  "activated_at": "2019-01-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "7511",
+   "pin_status": "ok",
+   "puk": "19140411"
+  },
+  "active_vas": [
+   "V_FAL"
+  ],
+  "renewal_day_of_month": 13,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981009590",
+  "customer_id": "C00070",
+  "tariff_id": "T_PAYG",
+  "status": "active",
+  "balance": 1.2,
+  "segment": "prepaid",
+  "region": "Qəbələ",
+  "language": "az",
+  "activated_at": "2019-02-18T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "2642",
+   "pin_status": "ok",
+   "puk": "82375751"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 8,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981009727",
+  "customer_id": "C00071",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 20.1,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "az",
+  "activated_at": "2020-03-14T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "7202",
+   "pin_status": "ok",
+   "puk": "13945942"
+  },
+  "active_vas": [
+   "V_FAL"
+  ],
+  "renewal_day_of_month": 8,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981009864",
+  "customer_id": "C00072",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 0.4,
+  "segment": "prepaid",
+  "region": "Şamaxı",
+  "language": "az",
+  "activated_at": "2022-11-29T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "8701",
+   "pin_status": "ok",
+   "puk": "54035507"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 5,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981010001",
+  "customer_id": "C00073",
+  "tariff_id": "T_PAYG",
+  "status": "active",
+  "balance": 0.4,
+  "segment": "prepaid",
+  "region": "Şəki",
+  "language": "az",
+  "activated_at": "2025-01-17T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": true,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "6676",
+   "pin_status": "ok",
+   "puk": "25015562"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 3,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981010138",
+  "customer_id": "C00074",
+  "tariff_id": "T_MAX",
+  "status": "active",
+  "balance": 24.0,
+  "segment": "prepaid",
+  "region": "Mingəçevir",
+  "language": "az",
+  "activated_at": "2024-03-23T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "1396",
+   "pin_status": "ok",
+   "puk": "27151257"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 7,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981010275",
+  "customer_id": "C00075",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 0.4,
+  "segment": "prepaid",
+  "region": "Şəki",
+  "language": "az",
+  "activated_at": "2026-05-12T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": false,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Tecno Spark 10",
+   "os": "Android 13",
+   "supports_volte": false,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "1939",
+   "pin_status": "ok",
+   "puk": "43005188"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 26,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981010412",
+  "customer_id": "C00076",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 24.0,
+  "segment": "prepaid",
+  "region": "Mingəçevir",
+  "language": "az",
+  "activated_at": "2024-05-22T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "6172",
+   "pin_status": "ok",
+   "puk": "87520413"
+  },
+  "active_vas": [
+   "V_MELODIYA"
+  ],
+  "renewal_day_of_month": 3,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981010549",
+  "customer_id": "C00077",
+  "tariff_id": "T_MAX",
+  "status": "active",
+  "balance": 21.2,
+  "segment": "prepaid",
+  "region": "Bakı-Yasamal",
+  "language": "ru",
+  "activated_at": "2022-04-03T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "0208",
+   "pin_status": "ok",
+   "puk": "22165450"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 2,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981010686",
+  "customer_id": "C00078",
+  "tariff_id": "T_BIZNES",
+  "status": "active",
+  "balance": 4.0,
+  "segment": "postpaid",
+  "region": "Bakı-Xətai",
+  "language": "az",
+  "activated_at": "2025-12-13T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": false,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Nokia 105",
+   "os": "Series 30+",
+   "supports_volte": false,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "7254",
+   "pin_status": "ok",
+   "puk": "13991574"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 30,
+  "postpaid": {
+   "due_date": "2026-10-29T23:59:00+04:00",
+   "amount_due": 0.0,
+   "overdue_days": 0
+  }
+ },
+ {
+  "msisdn": "+994981010823",
+  "customer_id": "C00079",
+  "tariff_id": "T_BIZNES",
+  "status": "active",
+  "balance": 1.2,
+  "segment": "postpaid",
+  "region": "Şəki",
+  "language": "ru",
+  "activated_at": "2021-03-09T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": false,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Nokia 105",
+   "os": "Series 30+",
+   "supports_volte": false,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "3068",
+   "pin_status": "ok",
+   "puk": "59951669"
+  },
+  "active_vas": [
+   "V_XEBER"
+  ],
+  "renewal_day_of_month": 24,
+  "postpaid": {
+   "due_date": "2026-10-29T23:59:00+04:00",
+   "amount_due": 0.0,
+   "overdue_days": 0
+  }
+ },
+ {
+  "msisdn": "+994981010960",
+  "customer_id": "C00080",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 14.0,
+  "segment": "prepaid",
+  "region": "Bakı-Nəsimi",
+  "language": "az",
+  "activated_at": "2024-03-23T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "5953",
+   "pin_status": "ok",
+   "puk": "47381773"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 19,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981011097",
+  "customer_id": "C00081",
+  "tariff_id": "T_GENC",
+  "status": "active",
+  "balance": 10.4,
+  "segment": "prepaid",
+  "region": "Qəbələ",
+  "language": "ru",
+  "activated_at": "2020-01-14T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Xiaomi Redmi Note 12",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "2036",
+   "pin_status": "ok",
+   "puk": "13953310"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 6,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981011234",
+  "customer_id": "C00082",
+  "tariff_id": "T_MAX",
+  "status": "active",
+  "balance": 14.0,
+  "segment": "prepaid",
+  "region": "Bakı-Nərimanov",
+  "language": "az",
+  "activated_at": "2018-08-22T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 11",
+   "os": "iOS 17",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "9388",
+   "pin_status": "ok",
+   "puk": "53200401"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 14,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981011371",
+  "customer_id": "C00083",
+  "tariff_id": "T_PAYG",
+  "status": "active",
+  "balance": 0.4,
+  "segment": "prepaid",
+  "region": "Şəki",
+  "language": "az",
+  "activated_at": "2017-12-25T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "7860",
+   "pin_status": "ok",
+   "puk": "39343993"
+  },
+  "active_vas": [
+   "V_FAL"
+  ],
+  "renewal_day_of_month": 8,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981011508",
+  "customer_id": "C00084",
+  "tariff_id": "T_MAX",
+  "status": "active",
+  "balance": 10.4,
+  "segment": "prepaid",
+  "region": "Şəki",
+  "language": "az",
+  "activated_at": "2026-03-13T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "iPhone 13",
+   "os": "iOS 18",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "9279",
+   "pin_status": "ok",
+   "puk": "29014290"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 5,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981011645",
+  "customer_id": "C00085",
+  "tariff_id": "T_BIZNES",
+  "status": "active",
+  "balance": 1.2,
+  "segment": "postpaid",
+  "region": "Bakı-Nəsimi",
+  "language": "az",
+  "activated_at": "2017-08-27T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": false,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Nokia 105",
+   "os": "Series 30+",
+   "supports_volte": false,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "9204",
+   "pin_status": "ok",
+   "puk": "65999543"
+  },
+  "active_vas": [
+   "V_FAL"
+  ],
+  "renewal_day_of_month": 29,
+  "postpaid": {
+   "due_date": "2026-10-29T23:59:00+04:00",
+   "amount_due": 0.0,
+   "overdue_days": 0
+  }
+ },
+ {
+  "msisdn": "+994981011782",
+  "customer_id": "C00086",
+  "tariff_id": "T_BIZNES",
+  "status": "active",
+  "balance": 1.2,
+  "segment": "postpaid",
+  "region": "Qəbələ",
+  "language": "az",
+  "activated_at": "2020-04-13T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "5643",
+   "pin_status": "ok",
+   "puk": "76167563"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 20,
+  "postpaid": {
+   "due_date": "2026-10-29T23:59:00+04:00",
+   "amount_due": 0.0,
+   "overdue_days": 0
+  }
+ },
+ {
+  "msisdn": "+994981011919",
+  "customer_id": "C00087",
+  "tariff_id": "T_PLUS",
+  "status": "active",
+  "balance": 10.2,
+  "segment": "prepaid",
+  "region": "Lənkəran",
+  "language": "ru",
+  "activated_at": "2019-01-19T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A54",
+   "os": "Android 14",
+   "supports_volte": true,
+   "supports_esim": true,
+   "supports_5g": true
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "3304",
+   "pin_status": "ok",
+   "puk": "76697125"
+  },
+  "active_vas": [
+   "V_FAL"
+  ],
+  "renewal_day_of_month": 30,
+  "postpaid": null
+ },
+ {
+  "msisdn": "+994981012056",
+  "customer_id": "C00088",
+  "tariff_id": "T_START",
+  "status": "active",
+  "balance": 26.0,
+  "segment": "prepaid",
+  "region": "Bakı-Nərimanov",
+  "language": "az",
+  "activated_at": "2024-12-18T12:00:00+04:00",
+  "settings": {
+   "roaming_enabled": false,
+   "data_enabled": true,
+   "volte": true,
+   "auto_renew": true,
+   "premium_sms_blocked": false
+  },
+  "device": {
+   "model": "Samsung Galaxy A14",
+   "os": "Android 13",
+   "supports_volte": true,
+   "supports_esim": false,
+   "supports_5g": false
+  },
+  "sim": {
+   "type": "physical",
+   "iccid_last4": "2928",
+   "pin_status": "ok",
+   "puk": "74288929"
+  },
+  "active_vas": [],
+  "renewal_day_of_month": 13,
+  "postpaid": null
+ }
+]
