@@ -1,0 +1,5 @@
+export type BackendDecision = 'REFUND'|'FIX'|'EXPLAIN'|'GOODWILL'|'SPECIALIST'|'NOT_CONFIRMED'|'INFO'|'REFUSE';
+export interface BackendCase { case_id:string;session_id:string;msisdn:string;channel:'web'|'voice'|'api';intent:string;root_cause:string;decision:BackendDecision;amount:number;team:string|null;priority:'P1'|'P2'|'P3'|null;sla:string|null;ticket_no:string|null;summary:string;rule_ids:string[];evidence:string[];citations:string[];status:'RESOLVED'|'ESCALATED'|'OPEN';created_at:string;closed_at:string|null;latency_ms?:{first_token:number;llm:number;tools:number;total:number};transcript?:{role:'user'|'assistant';text:string}[] }
+export interface SessionCreated {session_id:string;persona:{name:string};greeting:string}
+export interface FinalEvent {message_id:string;text?:string;voice_text?:string;decision:BackendDecision;root_cause:string;amount:number;case_id:string;citations:string[];rule_ids:string[];latency_ms?:BackendCase['latency_ms']}
+export interface StreamEvent {event:string;id?:string;data:Record<string,unknown>}
